@@ -471,6 +471,45 @@ p.p2 {
 			right: 0;
 		}
 	}
+	.animation {
+		background: url(../img/bg_hero_pc.png) center/cover no-repeat;
+		height: 750px;
+		position: relative;
+		overflow: hidden;
+		.obj {
+			position: absolute;
+		}
+		.phone {
+			bottom: -74px;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+		}
+		.msg1 {
+			top: 270px;
+			left: 31%;
+		}
+		.msg2 {
+			bottom: 45px;
+			right: 11%;
+		}
+		.pic1 {
+			top: 45%;
+			left: 19.7%;
+		}
+		.pic2 {
+			bottom: 117px;
+			left: 13%;
+		}
+		.pic3 {
+			top: 38%;
+			right: 29%;
+		}
+		.pic4 {
+			top: 50%;
+			right: 13.8%;
+		}
+	}
 }
 
 .section-02 {
