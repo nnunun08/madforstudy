@@ -1,12 +1,76 @@
 @import url(./reset.css);
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css");
+// @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+@font-face {
+    font-family: 'SUIT Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SUIT Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SUIT Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SUIT Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SUIT Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SUIT Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SUIT Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SUIT Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SUIT Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Heavy.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}
 
 :root {
     --white: #fff;
 }
 
 html {
-    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, HelveticaNeue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 body {
@@ -41,6 +105,165 @@ input {
 	-webkit-box-orient: vertical;
 	display: -webkit-box;
 }
+
+.inner {
+	max-width: 1280px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 16px;
+	box-sizing: border-box;
+}
+
+.d-pc {
+	display: block !important;
+}
+
+.d-mo {
+	display: none !important;
+}
+@media screen and (max-width:1280px) {
+	.d-pc {
+		display: none !important;
+	}
+	
+	.d-mo {
+		display: block !important;
+	}
+}
+
+.text-gra {
+	background: linear-gradient(90deg, #00E5FF 0%, #1A6AFF 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+
+// 강조 Extra bold
+h1 {
+	color: #000;
+	text-align: center;
+	font-family: "SUIT Variable";
+	font-size: 64px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 144%; /* 92.16px */
+	letter-spacing: -1.92px;
+}
+// 본문 타이틀 SUIT Bold 64Pt
+h2 {
+	color: #000;
+	text-align: center;
+	font-family: "SUIT Variable";
+	font-size: 64px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 144%; /* 92.16px */
+	letter-spacing: -1.92px;
+}
+// 섹션 타이틀 SUIT Bold 56Pt
+h3 {
+	color: #000;
+	text-align: center;
+	font-family: "SUIT Variable";
+	font-size: 56px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 144%; /* 80.64px */
+	letter-spacing: -1.68px;
+}
+// 서브 타이틀 SUIT Bold 48Pt
+h4 {
+	color: #000;
+	text-align: center;
+	font-family: "SUIT Variable";
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 144%; /* 69.12px */
+	letter-spacing: -1.44px;
+}
+// 카피라이팅 SUIT Bold 32Pt
+h5 {
+	color: #000;
+	text-align: center;
+	font-family: "SUIT Variable";
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 144%; /* 46.08px */
+	letter-spacing: -0.96px;
+}
+// 설명 텍스트 SUIT Medium 24pt
+p.p1 {
+	color: #000;
+	text-align: center;
+	font-family: "SUIT Variable";
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 144%; /* 34.56px */
+	letter-spacing: -0.72px;
+}
+// 약한 텍스트 SUIT Light 24pt
+p.p2 {
+	color: #000;
+	text-align: center;
+	font-family: "SUIT Variable";
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 144%; /* 34.56px */
+	letter-spacing: -0.72px;
+}
+
+.btn-round {
+	border-radius: 90px;
+	padding: 16px 32px;
+	display: inline-flex;
+	&.btn-gra {
+		background: linear-gradient(90deg, #3B82F6 0%, #005BEA 100%);
+		color: #FFF;
+		font-family: "SUIT Variable";
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 128%; /* 30.72px */
+		letter-spacing: -0.72px;
+	}
+	&.btn-grey {
+		border: 2px solid #EEE;
+		color: #EEE;
+		font-family: "SUIT Variable";
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 128%; /* 30.72px */
+		letter-spacing: -0.72px;
+	}
+	&.btn-white {
+		border: 2px solid #FFF;
+		color: #FFF;
+		font-family: "SUIT Variable";
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 128%; /* 30.72px */
+		letter-spacing: -0.72px;
+	}
+	&.btn-border {
+		border: 2px solid #3B82F6;
+		color: #3B82F6;
+		font-family: "SUIT Variable";
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 128%; /* 30.72px */
+		letter-spacing: -0.72px;
+	}
+}
+
+
 // 타블렛브레이크 포인트
 @media screen and (max-width:768px) {
 
@@ -50,3 +273,235 @@ input {
 	
 }
   
+.gnbWrap {
+	padding-top: 127px;
+}
+.gnb {
+	z-index: 1;
+	padding: 40px 0 35px;
+	background-color: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	.inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	a {
+		color: inherit;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 4px;
+	}
+	.logo {
+
+	}
+	ul {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.menu {
+		// gap: 32px;
+		justify-content: space-between;
+		flex: 1 0 0;
+		max-width: 724px;
+		padding: 0 16px;
+		box-sizing: border-box;
+		a {
+			color: #000;
+			font-family: "Pretendard Variable";
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 128%; /* 20.48px */
+			padding-block: 16px;
+		}
+		.face {
+			padding-left: 24px;
+			position: relative;
+			&::before {
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 0;
+				width: 20px;
+				height: 21px;
+				background: url(../img/madIcon.svg) center/cover no-repeat;
+				transform: translateY(-50%);
+				margin-top: -2px;
+			}
+		}
+		.item {
+			position: relative;
+			white-space: nowrap;
+			&:hover {
+				.subMenu {
+					display: block;
+				}
+			}
+		}
+	}
+	.subMenu {
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		border-radius: 4px;
+		background: #FFF;
+		box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.24);
+		padding-block: 13px;
+		a {
+			box-sizing: border-box;
+			min-width: 160px;
+			display: block;
+			color: #222;
+			font-family: "Pretendard Variable";
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 28px;
+			padding: 0 28px;
+			white-space: nowrap;
+			&:hover {
+				background: #3B82F6;
+				color: #fff;
+			}
+		}
+		a + a {
+			margin-top: 2px;
+		}
+	}
+	.login {
+		gap: 8px;
+		.black {
+			color: #FFF;
+			text-align: center;
+			font-family: "Pretendard Variable";
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: normal;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 96px;
+			height: 32px;
+			padding: 5px 16px;
+			gap: 16px;
+			border-radius: 50px;
+			background: linear-gradient(90deg, #7C7C7C 0%, #000 100%);
+			box-sizing: border-box;
+		}
+		.border {
+			color: #000;
+			text-align: center;
+			font-family: "Pretendard Variable";
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: normal;
+			display: flex;
+			width: 104px;
+			height: 32px;
+			padding: 5px 16px;
+			justify-content: center;
+			align-items: center;
+			gap: 16px;
+			border-radius: 50px;
+			border: 2px solid #000;
+			box-sizing: border-box;
+		}
+	}
+}
+
+
+.hero {
+	text-align: center;
+	padding-top: 120px;
+	h1 {
+		margin-top: 64px;
+	}
+	h5 {
+		margin-top: 24px;
+		color: #005EBA;
+		text-align: center;
+		font-family: "SUIT Variable";
+		font-size: 32px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 120%; /* 38.4px */
+		letter-spacing: -0.96px;
+	}
+	.bg {
+		display: block;
+		max-width: 1440px;
+		width: 100%;
+		margin: 0 auto;
+		margin-top: -150px;
+	}
+	.black {
+		background-color: #333;
+		z-index: -1;
+		.inner {
+			text-align: left;
+			max-width: 1012px;
+			position: relative;
+			padding-block: 56px 43px;
+		}
+		h5 {
+			color: #fff;
+			text-align: left;
+			margin: 0;
+			margin-bottom: 24px;
+			line-height: 144%; /* 46.08px */
+		}
+		.p1 {
+			color: #fff;
+			text-align: left;
+			margin-bottom: 32px;
+			line-height: 120%; /* 28.8px */
+		}
+		img {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+	}
+}
+
+.section-02 {
+	padding: 160px 0;
+	text-align: center;
+	.inner {
+
+	}
+	img {
+		max-width: 100%;
+	}
+	h5 {
+		font-weight: 700;
+		line-height: 150%; /* 48px */
+		letter-spacing: -0.96px;
+	}
+	h2 {
+		margin-block: 9px 16px;
+	}
+	.para {
+		margin-block: 70px 48px;
+		span {
+			margin-top: 70px;
+			color: #000;
+			text-align: center;
+			font-family: "SUIT Variable";
+			font-size: 32px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 144%; /* 46.08px */
+		}
+		
+	}
+}
