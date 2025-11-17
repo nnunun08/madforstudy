@@ -138,6 +138,13 @@ input {
 	-webkit-text-fill-color: transparent;
 }
 
+.max1440 {
+	display: block;
+	width: 100%;
+	max-width: 1440px !important;
+	margin: 0 auto;
+}
+
 
 // 강조 Extra bold
 h1 {
@@ -149,6 +156,7 @@ h1 {
 	font-weight: 800;
 	line-height: 144%; /* 92.16px */
 	letter-spacing: -1.92px;
+	word-break: keep-all;
 }
 // 본문 타이틀 SUIT Bold 64Pt
 h2 {
@@ -160,6 +168,7 @@ h2 {
 	font-weight: 700;
 	line-height: 144%; /* 92.16px */
 	letter-spacing: -1.92px;
+	word-break: keep-all;
 }
 // 섹션 타이틀 SUIT Bold 56Pt
 h3 {
@@ -171,6 +180,7 @@ h3 {
 	font-weight: 700;
 	line-height: 144%; /* 80.64px */
 	letter-spacing: -1.68px;
+	word-break: keep-all;
 }
 // 서브 타이틀 SUIT Bold 48Pt
 h4 {
@@ -182,6 +192,7 @@ h4 {
 	font-weight: 700;
 	line-height: 144%; /* 69.12px */
 	letter-spacing: -1.44px;
+	word-break: keep-all;
 }
 // 카피라이팅 SUIT Bold 32Pt
 h5 {
@@ -193,6 +204,7 @@ h5 {
 	font-weight: 700;
 	line-height: 144%; /* 46.08px */
 	letter-spacing: -0.96px;
+	word-break: keep-all;
 }
 // 설명 텍스트 SUIT Medium 24pt
 p.p1 {
@@ -204,6 +216,7 @@ p.p1 {
 	font-weight: 500;
 	line-height: 144%; /* 34.56px */
 	letter-spacing: -0.72px;
+	word-break: keep-all;
 }
 // 약한 텍스트 SUIT Light 24pt
 p.p2 {
@@ -215,6 +228,7 @@ p.p2 {
 	font-weight: 300;
 	line-height: 144%; /* 34.56px */
 	letter-spacing: -0.72px;
+	word-break: keep-all;
 }
 
 .btn-round {
@@ -513,13 +527,84 @@ p.p2 {
 }
 
 .section-02 {
-	padding: 160px 0;
+	padding: 160px 0 0;
 	text-align: center;
 	.inner {
 
 	}
+	.graph {
+		aspect-ratio: 1100 / 604;
+		position: relative;
+		background: url(../img/bg_section_02_graph.svg) center/contain no-repeat;
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+		.barWrap {
+			position: absolute;
+			top: 18.5%;
+			left: 28%;
+			width: 61%;
+			height: 71.5%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+		.bar {
+			position: relative;
+			height: 13.3%;
+			width: 32px;
+			border-radius: 0 99px 99px 0;
+			background: linear-gradient(90deg, rgba(204, 204, 204, 0.90) 4.25%, rgba(80, 80, 80, 0.90) 95.75%);
+			transition: 0.5s;
+			&.aos-animate {
+				&.bar1{width: 100%;}
+				&.bar2 {width: 68%;}
+				&.bar3 {width: 48%;}
+				&.bar4 {width: 43%;}
+				&.bar5 {width: 32%;}
+			}
+			.name {
+				display: none;
+				position: absolute;
+				left: 53px;
+				top: 50%;
+				transform: translateY(-50%);
+				color: #FFF;
+				font-family: "SUIT Variable";
+				font-size: 1.9vw;
+				font-style: normal;
+				font-weight: 700;
+				line-height: 144%; /* 40.32px */
+				letter-spacing: 0.84px;
+			}
+			span {
+				display: none;
+				position: absolute;
+				left: 105%;
+				top: 50%;
+				transform: translateY(-50%);
+				color: #6E6E6E;
+				font-family: "SUIT Variable";
+				font-size: 24px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 144%; /* 34.56px */
+				letter-spacing: 0.72px;
+			}
+		}
+		.bar1 {
+			background: linear-gradient(90deg, #0097D8 6.27%, #2B13FB 43.22%, #0050E9 102.34%);
+		}
+	}
 	img {
+		display: block;
 		max-width: 100%;
+		margin: 0 auto;
 	}
 	h5 {
 		font-weight: 700;
