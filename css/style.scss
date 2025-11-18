@@ -2,68 +2,7 @@
 // @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css");
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
 
-@font-face {
-    font-family: 'SUIT Variable';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Thin.woff2') format('woff2');
-    font-weight: 100;
-    font-display: swap;
-}
 
-@font-face {
-    font-family: 'SUIT Variable';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-ExtraLight.woff2') format('woff2');
-    font-weight: 200;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'SUIT Variable';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Light.woff2') format('woff2');
-    font-weight: 300;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'SUIT Variable';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'SUIT Variable';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Medium.woff2') format('woff2');
-    font-weight: 500;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'SUIT Variable';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-SemiBold.woff2') format('woff2');
-    font-weight: 600;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'SUIT Variable';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'SUIT Variable';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-ExtraBold.woff2') format('woff2');
-    font-weight: 800;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'SUIT Variable';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Heavy.woff2') format('woff2');
-    font-weight: 900;
-    font-display: swap;
-}
 
 :root {
     --white: #fff;
@@ -141,8 +80,12 @@ input {
 .max1440 {
 	display: block;
 	width: 100%;
+	height: auto;
 	max-width: 1440px !important;
 	margin: 0 auto;
+	img {
+		width: 100%;
+	}
 }
 
 
@@ -291,7 +234,7 @@ p.p2 {
 	padding-top: 127px;
 }
 .gnb {
-	z-index: 1;
+	z-index: 2;
 	padding: 40px 0 35px;
 	background-color: #fff;
 	position: fixed;
@@ -627,5 +570,267 @@ p.p2 {
 			line-height: 144%; /* 46.08px */
 		}
 		
+	}
+}
+
+.section-03 {
+	overflow: hidden;
+	.inner {
+		max-width: 1120px;
+	}
+	.rolling {
+		width: 100%;
+		margin: 0 auto;
+		margin-top: -20px;
+		padding-bottom: 130px;
+		pointer-events: none;
+		.swiper-wrapper {
+			transition-timing-function: linear !important;
+		}
+		.swiper {
+			overflow: visible;
+		}
+		.swiper-slide {
+			padding: 20px;
+			max-width: 240px;
+		}
+		.item {
+			aspect-ratio: 240 / 344;
+			box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.16);
+			border-radius: 16px;
+			overflow: hidden;
+			img {
+				width: 100%;
+			}
+		}
+	}
+	// .item {
+	// 	display: flex;
+	// 	flex-direction: column;
+	// 	gap: 16px;
+	// 	padding: 15px;
+	// 	border-radius: 16px;
+	// 	border: 1px solid #EEE;
+	// 	background: #FFF;
+	// 	box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.16);
+	// 	max-width: 240px;
+	// }
+	// p {
+	// 	color: #000;
+	// 	font-family: "SUIT Variable";
+	// 	font-size: 24px;
+	// 	font-style: normal;
+	// 	font-weight: 500;
+	// 	line-height: 120%; /* 28.8px */
+	// 	letter-spacing: -0.72px;
+	// 	word-break: keep-all;
+	// 	span {
+	// 		color: #005BEA;
+	// 		font-weight: 800;
+	// 	}
+	// }
+	// img {
+	// 	border-radius: 18px;
+	// }
+	// .name {
+	// 	color: #555;
+	// 	font-family: "SUIT Variable";
+	// 	font-size: 16px;
+	// 	font-style: normal;
+	// 	font-weight: 500;
+	// 	line-height: 120%; /* 19.2px */
+	// }
+}
+
+.section-04 {
+	background: #111;
+	padding: 160px 0 140px;
+	.inner {
+		background: url(../img/bg_section04.png) center/100% no-repeat;
+	}
+	h5 {
+		color: #FFF;
+		text-align: center;
+		font-family: "SUIT Variable";
+		font-size: 32px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 120%; /* 38.4px */
+		letter-spacing: -0.96px;
+		margin-bottom: 32px;
+	}
+	h2 {
+		color: #FFF;
+		font-family: "SUIT Variable";
+		font-size: 72px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 144%;
+		letter-spacing: -2.16px;
+		.color {
+			color: #00E5FF;
+			font-weight: 800;
+		}
+	}
+	.imgWrap {
+		max-width: 1111px;
+		aspect-ratio: 1111 / 965;
+		margin: 0 auto;
+		margin-top: -65px;
+		position: relative;
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+		}
+	}
+	.p1 {
+		color: #FFF;
+		text-align: center;
+		font-family: "SUIT Variable";
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 144%; /* 34.56px */
+		letter-spacing: -0.72px;
+		span {
+			font-weight: 700;
+			padding: 0 15px;
+			border-radius: 99px;
+			border: 1px solid #fff;
+			display: inline-block;
+			margin-inline: 5px;
+		}
+	}
+	.btnWrap {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 auto;
+		margin-top: 80px;
+		gap: 40px;
+	}
+}
+
+.section-05 {
+	padding: 200px 0 192px;
+	text-align: center;
+	overflow: hidden;
+	.inner {
+		max-width: 1206px;
+	}
+	.badge {
+		color: #FFF;
+		text-align: center;
+		font-family: "SUIT Variable";
+		font-size: 40px;
+		font-style: normal;
+		font-weight: 800;
+		line-height: 150%; /* 60px */
+		letter-spacing: -1.2px;
+		border-radius: 90px;
+		background: linear-gradient(90deg, #00E5FF 0%, #1A6AFF 100%);
+		width: 280px;
+		height: 64px;
+		margin: 0 auto;
+		margin-bottom: 40px;
+	}
+	h1 {
+		margin-bottom: 24px;
+		span {
+			color: #005BEA;
+		}
+	}
+	h5 {
+		color: #000;
+		text-align: center;
+		font-family: "SUIT Variable";
+		font-size: 32px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 144%; /* 46.08px */
+		letter-spacing: -0.96px;
+		margin-bottom: 80px;
+	}
+	.slick {
+		margin-bottom: 176px;
+	}
+	.slick-list,
+	.slick {
+		overflow: visible;
+	}
+	.slick-dots {
+		bottom: -60px;
+	}
+	.slick-dots li {
+		margin: 0 12px;
+		button {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 0;
+		}
+		button:before {
+			position: static;
+			width: 16px;
+			height: 16px;
+			border-radius: 99px;
+			background: #111;
+		}
+	}
+	.card {
+		padding: 0 32px;
+	}
+	.item {
+		border-radius: 40px;
+		background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(100deg, #111 17.67%, #777 57.68%, #424242 73.97%);
+		box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.16);
+		display: flex;
+		align-items: center;
+		gap: 40px;
+		padding: 60px 62px 60px 72px;
+		box-sizing: border-box;
+		word-break: keep-all;
+		h4 {
+			color: #FFF;
+			font-family: "SUIT Variable";
+			font-size: 48px;
+			font-style: normal;
+			font-weight: 800;
+			line-height: 144%; /* 69.12px */
+			letter-spacing: -2.4px;
+			text-align: left;
+		}
+		.p1 {
+			color: #FFF;
+			font-family: "SUIT Variable";
+			font-size: 24px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 128%; /* 30.72px */
+			letter-spacing: -0.72px;
+			margin-block: 16px 40px;
+			text-align: left;
+		}
+		.imgWrap {
+			aspect-ratio: 480 / 400;
+			max-width: 480px;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				border-radius: 24px;
+			}
+		}
+	}
+	.left {
+		text-align: left;
+	}
+	.btnWrap {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 40px;
 	}
 }
