@@ -913,4 +913,80 @@ p.p2 {
   height: 16px;
   border-radius: 99px;
   background: #111;
+}
+.section-09 {
+  padding: 240px 0 200px;
+  background-color: #000;
+  text-align: center;
+}
+.section-09 .inner {
+  overflow: hidden;
+}
+.section-09 h2 {
+  color: #fff;
+}
+.section-09 h2 .color {
+  font-weight: 800;
+  color: #3B82F6;
+}
+.section-09 h5 {
+  color: #FFF;
+  text-align: center;
+  font-family: "SUIT Variable";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 48px */
+  letter-spacing: -0.96px;
+  margin-bottom: 40px;
+}
+.section-09 h5 b {
+  font-weight: 700;
+}
+.section-09 .bookWrap {
+  width: 100%;
+  padding: 40px 0;
+  position: relative;
+  overflow: hidden;
+}
+.section-09 .bookWrap .bookDim {
+  background: linear-gradient(90deg, #000000 0.7%, rgba(0, 0, 0, 0) 51.77%, #000000 101.87%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.section-09 .bookWrap .book {
+  animation: bookTrack 40s linear infinite;
+}
+.section-09 .bookWrap .track {
+  display: flex;
+}
+@keyframes bookTrack {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.section-09 .graText {
+  margin-top: 80px;
+  background: linear-gradient(90deg, #00E5FF 0%, #005BEA 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.section-09 .tableImg {
+  margin-bottom: 80px;
+  width: 100%;
+}
+.section-09 .btnWrap {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 40px;
 }/*# sourceMappingURL=style.css.map */

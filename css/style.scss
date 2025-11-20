@@ -974,3 +974,80 @@ p.p2 {
 
 	}
 }
+
+.section-09 {
+	padding: 240px 0 200px;
+	background-color: #000;
+	text-align: center;
+	.inner {
+		overflow: hidden;
+	}
+	h2 {
+		color: #fff;
+		.color {
+			font-weight: 800;
+			color: #3B82F6;
+		}
+	}
+	h5 {
+		color: #FFF;
+		text-align: center;
+		font-family: "SUIT Variable";
+		font-size: 32px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 150%; /* 48px */
+		letter-spacing: -0.96px;
+		margin-bottom: 40px;
+		b {
+			font-weight: 700;
+		}
+	}
+	.bookWrap {
+		width: 100%;
+		padding: 40px 0;
+		position: relative;
+		overflow: hidden;
+		.bookDim {
+			background: linear-gradient(90deg, #000000 0.7%, rgba(0, 0, 0, 0) 51.77%, #000000 101.87%);
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+		}
+		.book {
+			animation: bookTrack 40s linear infinite;
+		}
+		.track {
+			display: flex;
+		}
+		@keyframes bookTrack {
+			from {
+				transform: translateX(0);
+			}
+			to {
+				transform: translateX(-100% );
+			}
+		}
+	}
+	.graText {
+		margin-top: 80px;
+		background: linear-gradient(90deg, #00E5FF 0%, #005BEA 100%);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	.tableImg {
+		margin-bottom: 80px;
+		width: 100%;
+	}
+	.btnWrap {
+		margin-top: 80px;
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+		gap: 40px;
+	}
+}
