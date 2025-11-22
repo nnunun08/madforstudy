@@ -85,9 +85,16 @@ input {
   width: 100%;
 }
 
+.btnWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 80px;
+}
+
 h1 {
   color: #000;
-  text-align: center;
   font-family: "SUIT Variable";
   font-size: 64px;
   font-style: normal;
@@ -99,7 +106,6 @@ h1 {
 
 h2 {
   color: #000;
-  text-align: center;
   font-family: "SUIT Variable";
   font-size: 64px;
   font-style: normal;
@@ -111,7 +117,6 @@ h2 {
 
 h3 {
   color: #000;
-  text-align: center;
   font-family: "SUIT Variable";
   font-size: 56px;
   font-style: normal;
@@ -123,7 +128,6 @@ h3 {
 
 h4 {
   color: #000;
-  text-align: center;
   font-family: "SUIT Variable";
   font-size: 48px;
   font-style: normal;
@@ -135,7 +139,6 @@ h4 {
 
 h5 {
   color: #000;
-  text-align: center;
   font-family: "SUIT Variable";
   font-size: 32px;
   font-style: normal;
@@ -147,7 +150,6 @@ h5 {
 
 p.p1 {
   color: #000;
-  text-align: center;
   font-family: "SUIT Variable";
   font-size: 24px;
   font-style: normal;
@@ -159,7 +161,6 @@ p.p1 {
 
 p.p2 {
   color: #000;
-  text-align: center;
   font-family: "SUIT Variable";
   font-size: 24px;
   font-style: normal;
@@ -592,13 +593,13 @@ p.p2 {
 .section-04 {
   background: #111;
   padding: 160px 0 140px;
+  text-align: center;
 }
 .section-04 .inner {
   background: url(../img/bg_section04.png) center/100% no-repeat;
 }
 .section-04 h5 {
   color: #FFF;
-  text-align: center;
   font-family: "SUIT Variable";
   font-size: 32px;
   font-style: normal;
@@ -736,6 +737,7 @@ p.p2 {
   box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.16);
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 40px;
   padding: 60px 62px 60px 72px;
   box-sizing: border-box;
@@ -785,6 +787,12 @@ p.p2 {
 .section-06 {
   padding: 200px 0 160px;
   background: #222;
+  text-align: center;
+  overflow: hidden;
+}
+.section-06 .color {
+  color: #3B82F6;
+  font-weight: 800;
 }
 .section-06 .inner {
   max-width: 1640px;
@@ -796,16 +804,24 @@ p.p2 {
 .section-06 h5 {
   color: #fff;
 }
-.section-06 img {
-  width: 100%;
-  margin-top: -60px;
-  margin-bottom: 120px;
-}
 .section-06 .btnWrap {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 40px;
+}
+.section-06 .imgWrap {
+  position: relative;
+  aspect-ratio: 1608/1105;
+  margin-top: 80px;
+  margin-bottom: 120px;
+}
+.section-06 .imgWrap img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 113%;
 }
 
 .section-07 {
@@ -819,7 +835,7 @@ p.p2 {
   position: absolute;
   top: 0;
   right: 0;
-  width: 47%;
+  width: 640px;
   height: 100%;
   background: linear-gradient(180deg, #FFF 1.65%, rgba(255, 255, 255, 0.2) 16.25%, rgba(255, 255, 255, 0) 51.26%, rgba(255, 255, 255, 0.2) 84.4%, #FFF 99%);
 }
@@ -850,12 +866,23 @@ p.p2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 24px;
-  text-align: left;
+}
+.paraTemple h2 {
+  color: #000;
+  font-family: "SUIT Variable";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 144%; /* 92.16px */
+  letter-spacing: -1.92px;
+  margin-bottom: 40px;
+}
+.paraTemple h2 b {
+  font-weight: 800;
 }
 .paraTemple h3 {
   font-weight: 500;
   margin-bottom: 40px;
-  text-align: left;
 }
 .paraTemple h3 b {
   font-weight: 800;
@@ -863,7 +890,6 @@ p.p2 {
 .paraTemple h5 {
   font-weight: 500;
   margin-bottom: 72px;
-  text-align: left;
 }
 .paraTemple h5 b {
   font-weight: 700;
@@ -959,7 +985,7 @@ p.p2 {
   z-index: 1;
 }
 .section-09 .bookWrap .book {
-  animation: bookTrack 40s linear infinite;
+  animation: bookTrack 80s linear infinite;
 }
 .section-09 .bookWrap .track {
   display: flex;
@@ -973,7 +999,7 @@ p.p2 {
   }
 }
 .section-09 .graText {
-  margin-top: 80px;
+  margin-top: 120px;
   background: linear-gradient(90deg, #00E5FF 0%, #005BEA 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -984,9 +1010,94 @@ p.p2 {
   width: 100%;
 }
 .section-09 .btnWrap {
-  margin-top: 80px;
   display: flex;
   justify-content: center;
   margin: 0 auto;
+  margin-top: 80px;
   gap: 40px;
+}
+
+.section-10 {
+  padding-block: 160px;
+  text-align: center;
+}
+.section-10 img {
+  max-width: 100%;
+}
+.section-10 .p1 {
+  font-size: 32px;
+}
+.section-10 h5 {
+  margin-bottom: 120px;
+}
+.section-10 .btnWrap {
+  margin-top: 120px;
+}
+
+.section-11 {
+  text-align: center;
+  padding-block: 160px 133px;
+  background-color: #111111;
+}
+.section-11 h1 {
+  color: #fff;
+}
+.section-11 .reviewWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1440/1000;
+  overflow: hidden;
+  margin-top: 80px;
+}
+.section-11 .reviewWrap .reviewDim {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #111 0%, rgba(17, 17, 17, 0.1) 14.9%, rgba(17, 17, 17, 0) 50%, rgba(17, 17, 17, 0.1) 84.62%, #111 100%);
+}
+.section-11 .reviewWrap img {
+  width: 100%;
+  z-index: 0;
+  animation: verticalSlide 10000ms linear infinite;
+}
+
+.partnerLine {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+footer {
+  padding: 43px 0 30px;
+  background-color: #373B42;
+}
+footer .info {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  color: #888;
+  font-family: "SUIT Variable";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 144%; /* 14.4px */
+  margin-top: 24px;
+}
+footer .info .link {
+  display: flex;
+  gap: 20px;
+}
+footer .info .link a {
+  color: #888;
+  text-align: right;
+  font-family: "SUIT Variable";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 240%; /* 24px */
 }/*# sourceMappingURL=style.css.map */
