@@ -60,7 +60,7 @@ input {
 .d-mo {
 	display: none !important;
 }
-@media screen and (max-width:1280px) {
+@media screen and (max-width:1024px) {
 	.d-pc {
 		display: none !important;
 	}
@@ -220,16 +220,6 @@ p.p2 {
 		letter-spacing: -0.72px;
 	}
 }
-
-
-// 타블렛브레이크 포인트
-@media screen and (max-width:768px) {
-
-}
-// 모바일브레이크 포인트
-@media screen and (max-width:1280px) {
-	
-}
   
 .gnbWrap {
 	padding-top: 127px;
@@ -254,8 +244,19 @@ p.p2 {
 		justify-content: center;
 		gap: 4px;
 	}
-	.logo {
-
+	.command {
+		display: flex;
+		gap: 8px;
+		.profile {
+			width: 24px;
+			height: 24px;
+			background: url(../img/ic_gnb_profile.svg) center/100% no-repeat;
+		}
+		.hamburger {
+			width: 24px;
+			height: 24px;
+			background: url(../img/ic_gnb_hamburger.svg) center/100% no-repeat;
+		}
 	}
 	ul {
 		display: flex;
@@ -398,6 +399,7 @@ p.p2 {
 		display: block;
 		max-width: 1440px;
 		width: 100%;
+		// width: 1440px;
 		margin: 0 auto;
 		margin-top: -150px;
 	}
@@ -445,27 +447,39 @@ p.p2 {
 		}
 		.msg1 {
 			top: 270px;
-			left: 31%;
+			// left: 31%;
+			left: 50%;
+			margin-left: -278px;
 		}
 		.msg2 {
 			bottom: 45px;
-			right: 11%;
+			// right: 11%;
+			right: 50%;
+			margin-right: -561px;
 		}
 		.pic1 {
 			top: 45%;
-			left: 19.7%;
+			// left: 19.7%;
+			left: 50%;
+			margin-left: -436px;
 		}
 		.pic2 {
 			bottom: 117px;
-			left: 13%;
+			// left: 13%;
+			left: 50%;
+			margin-left: -525px;
 		}
 		.pic3 {
 			top: 38%;
-			right: 29%;
+			// right: 29%;
+			right: 50%;
+			margin-right: -302px;
 		}
 		.pic4 {
 			top: 50%;
-			right: 13.8%;
+			// right: 13.8%;
+			right: 50%;
+			margin-right: -510px;
 		}
 	}
 }
@@ -1163,6 +1177,179 @@ footer {
 				font-weight: 700;
 				line-height: 240%; /* 24px */
 			}
+		}
+	}
+}
+
+// 모바일브레이크 포인트
+@media screen and (max-width:1024px) {
+	// 강조 Extra bold
+	h1 {
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 800;
+		line-height: 120%; /* 26.4px */
+		letter-spacing: -0.66px;
+	}
+	// 본문 타이틀 SUIT Bold 64Pt
+	h2 {
+		font-size: 24px;
+	}
+	// 카피라이팅 SUIT Bold 32Pt
+	h5 {
+		font-size: 16px;
+	}
+
+	.gnb {
+		padding: 16px 0;
+		.logo {
+			img {
+				height: 20px;
+			}
+		}
+		.menu {
+			box-sizing: border-box;
+			max-width: 100%;
+			margin-top: 20px;
+			padding-top: 8px;
+			gap: 18px;
+			overflow: auto;
+			a {
+				padding: 8px 10px 16px;
+				border-bottom: 2px solid transparent;
+				color: #111;
+				text-align: center;
+				font-family: "SUIT Variable";
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 100%; /* 14px */
+				letter-spacing: -0.42px;
+			}
+			.item.ac {
+				a {
+					font-weight: 800;
+					border-color: #111;
+				}
+			}
+		}
+		.subMenuArea {
+			position: absolute;
+			top: 107px;
+			left: 0;
+			width: 100%;
+			.moSubMenu {
+				width: 100%;
+				box-sizing: border-box;
+				padding: 13px 15px;
+				background-color: #F9F9F9;
+				overflow: auto;
+				display: none;
+				gap: 16px;
+				&.open {
+					display: flex;
+				}
+				a {
+					white-space: nowrap;
+					display: flex;
+					padding: 8px 10px;
+					justify-content: center;
+					align-items: center;
+					gap: 10px;
+					color: #111;
+					text-align: center;
+					font-family: "SUIT Variable";
+					font-size: 14px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 100%; /* 14px */
+					letter-spacing: -0.42px;
+					border-radius: 90px;
+					&.ac {
+						background-color: #111;
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+
+	.hero {
+		.ic {
+			width: 30%;
+			// width: 124px;
+		}	
+		.bg {
+			margin-top: -16%;
+		}
+		h1 {
+			margin-top: 40px;
+			font-size: 6vw;
+		}
+		h5 {
+			margin-top: 8px;
+			color: #005EBA;
+			text-align: center;
+			font-family: "SUIT Variable";
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 120%; /* 19.2px */
+			letter-spacing: -0.48px;
+			font-size: 4.5vw;
+		}
+		.animation {
+			// height: 360px;
+			aspect-ratio: 360 / 312;
+			height: auto;
+			background: url(../img/bg_hero_mo.png) center top no-repeat;
+			.msg1 {
+				// top: 153px;
+				// width: 124px;
+				// margin-left: -121px;
+				top: 36%;
+				width: 34.5%;
+				margin-left: -36.5%;
+			}
+			.phone {
+				// bottom: -20px;
+				// width: 260px;
+				z-index: 1;
+				bottom: -8%;
+				width: 72%;
+			}
+			.pic1 {
+				// top: 57.8%;
+				// width: 48px;
+				// margin-left: -187px;
+				top: 53%;
+				width: 14%;
+				margin-left: -53.2%;
+			}
+			.pic3 {
+				// top: 37%;
+				// width: 50px;
+				// margin-right: -83px;
+				top: 30.6%;
+				width: 14%;
+				margin-right: -22%;
+			}
+			.pic4 {
+				// top: 46%;
+				// width: 58px;
+				// margin-right: -162px;
+				top: 41.7%;
+				width: 15.8%;
+				margin-right: -43.9%;
+			}
+			.pic2,
+			.msg2 {
+				display: none;
+			}
+		}
+
+		.black {
+			width: 100%;
 		}
 	}
 }

@@ -59,7 +59,7 @@ input {
   display: none !important;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1024px) {
   .d-pc {
     display: none !important;
   }
@@ -240,6 +240,20 @@ p.p2 {
   align-items: center;
   justify-content: center;
   gap: 4px;
+}
+.gnb .command {
+  display: flex;
+  gap: 8px;
+}
+.gnb .command .profile {
+  width: 24px;
+  height: 24px;
+  background: url(../img/ic_gnb_profile.svg) center/100% no-repeat;
+}
+.gnb .command .hamburger {
+  width: 24px;
+  height: 24px;
+  background: url(../img/ic_gnb_hamburger.svg) center/100% no-repeat;
 }
 .gnb ul {
   display: flex;
@@ -426,27 +440,33 @@ p.p2 {
 }
 .hero .animation .msg1 {
   top: 270px;
-  left: 31%;
+  left: 50%;
+  margin-left: -278px;
 }
 .hero .animation .msg2 {
   bottom: 45px;
-  right: 11%;
+  right: 50%;
+  margin-right: -561px;
 }
 .hero .animation .pic1 {
   top: 45%;
-  left: 19.7%;
+  left: 50%;
+  margin-left: -436px;
 }
 .hero .animation .pic2 {
   bottom: 117px;
-  left: 13%;
+  left: 50%;
+  margin-left: -525px;
 }
 .hero .animation .pic3 {
   top: 38%;
-  right: 29%;
+  right: 50%;
+  margin-right: -302px;
 }
 .hero .animation .pic4 {
   top: 50%;
-  right: 13.8%;
+  right: 50%;
+  margin-right: -510px;
 }
 
 .section-02 {
@@ -1100,4 +1120,148 @@ footer .info .link a {
   font-style: normal;
   font-weight: 700;
   line-height: 240%; /* 24px */
+}
+
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%; /* 26.4px */
+    letter-spacing: -0.66px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h5 {
+    font-size: 16px;
+  }
+  .gnb {
+    padding: 16px 0;
+  }
+  .gnb .logo img {
+    height: 20px;
+  }
+  .gnb .menu {
+    box-sizing: border-box;
+    max-width: 100%;
+    margin-top: 20px;
+    padding-top: 8px;
+    gap: 18px;
+    overflow: auto;
+  }
+  .gnb .menu a {
+    padding: 8px 10px 16px;
+    border-bottom: 2px solid transparent;
+    color: #111;
+    text-align: center;
+    font-family: "SUIT Variable";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 14px */
+    letter-spacing: -0.42px;
+  }
+  .gnb .menu .item.ac a {
+    font-weight: 800;
+    border-color: #111;
+  }
+  .gnb .subMenuArea {
+    position: absolute;
+    top: 107px;
+    left: 0;
+    width: 100%;
+  }
+  .gnb .subMenuArea .moSubMenu {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 15px;
+    background-color: #F9F9F9;
+    overflow: auto;
+    display: none;
+    gap: 16px;
+  }
+  .gnb .subMenuArea .moSubMenu.open {
+    display: flex;
+  }
+  .gnb .subMenuArea .moSubMenu a {
+    white-space: nowrap;
+    display: flex;
+    padding: 8px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #111;
+    text-align: center;
+    font-family: "SUIT Variable";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 14px */
+    letter-spacing: -0.42px;
+    border-radius: 90px;
+  }
+  .gnb .subMenuArea .moSubMenu a.ac {
+    background-color: #111;
+    color: #fff;
+  }
+  .hero .ic {
+    width: 30%;
+  }
+  .hero .bg {
+    margin-top: -16%;
+  }
+  .hero h1 {
+    margin-top: 40px;
+    font-size: 6vw;
+  }
+  .hero h5 {
+    margin-top: 8px;
+    color: #005EBA;
+    text-align: center;
+    font-family: "SUIT Variable";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 19.2px */
+    letter-spacing: -0.48px;
+    font-size: 4.5vw;
+  }
+  .hero .animation {
+    aspect-ratio: 360/312;
+    height: auto;
+    background: url(../img/bg_hero_mo.png) center top no-repeat;
+  }
+  .hero .animation .msg1 {
+    top: 36%;
+    width: 34.5%;
+    margin-left: -36.5%;
+  }
+  .hero .animation .phone {
+    z-index: 1;
+    bottom: -8%;
+    width: 72%;
+  }
+  .hero .animation .pic1 {
+    top: 53%;
+    width: 14%;
+    margin-left: -53.2%;
+  }
+  .hero .animation .pic3 {
+    top: 30.6%;
+    width: 14%;
+    margin-right: -22%;
+  }
+  .hero .animation .pic4 {
+    top: 41.7%;
+    width: 15.8%;
+    margin-right: -43.9%;
+  }
+  .hero .animation .pic2,
+  .hero .animation .msg2 {
+    display: none;
+  }
+  .hero .black {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
