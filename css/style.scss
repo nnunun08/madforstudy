@@ -1436,6 +1436,12 @@ footer {
 		@include textGra();
 		margin-bottom: 24px;
 	}
+	.black {
+		color: #111;
+		background: transparent;
+		margin: 0;
+		-webkit-text-fill-color: unset;
+	}
 	h5 {
 		margin-bottom: 80px;
 		font-weight: 400;
@@ -1536,6 +1542,45 @@ footer {
 			.msg3 {top: 55%;right: -23%;}
 		}
 	}
+	.bgImgCard {
+		max-width: 1032px;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 40px;
+		margin: 0 auto;
+		margin-bottom: 80px;
+		.item {
+			text-align: left;
+			box-sizing: border-box;
+			border-radius: 16px;
+			// background: linear-gradient(180deg, rgba(0, 0, 0, 0.30) 0%, #000 100%), url(<path-to-image>) lightgray 2.001px -80.822px / 100% 194.444% no-repeat;
+			display: flex;
+			align-items: flex-end;
+			flex: 1 0 auto;
+			padding: 47px;
+			width: 40%;
+			height: 400px;
+			color: #FFF;
+			font-family: "SUIT Variable";
+			font-size: 40px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 144%; /* 57.6px */
+			letter-spacing: -1.2px;
+			&.full {
+				width: 100%;
+			}
+			&:nth-child(1) {
+				background: linear-gradient(180deg, rgba(0, 0, 0, 0.30) 0%, #000 100%), url(../img/bg_section_12_bgImgCard_01.jpg) lightgray center/cover no-repeat;
+			}
+			&:nth-child(2) {
+				background: linear-gradient(180deg, rgba(0, 0, 0, 0.30) 0%, #000 100%), url(../img/bg_section_12_bgImgCard_02.jpg) lightgray center/cover no-repeat;
+			}
+			&:nth-child(3) {
+				background: linear-gradient(180deg, rgba(0, 0, 0, 0.30) 0%, #000 100%), url(../img/bg_section_12_bgImgCard_03.jpg) lightgray center/cover no-repeat;
+			}
+		}
+	}
 }
 .section-12 + .section-12 {
 	position: relative;
@@ -1634,6 +1679,21 @@ footer {
 		}
 		.btnWrap {
 			margin-top: 60px;
+		}
+		.bgImgCard {
+			gap: 24px;
+			margin: 0 auto;
+			margin-bottom: 40px;
+			.item {
+				padding: 28px;
+				aspect-ratio: 320 / 266;
+				width: 100%;
+				height: auto;
+				color: #FFF;
+				font-family: "SUIT Variable";
+				font-size: calc(22 / 360 * 100vw);
+				letter-spacing: -0.66px;
+			}
 		}
 	}
 }
@@ -1830,6 +1890,7 @@ footer {
 	padding: 120px 0 150px;
 	background: linear-gradient(109deg, #262626 17.95%, #484848 50.11%, #000 84.19%);
 	text-align: center;
+	overflow: hidden;
 	.inner {
 		max-width: 100%;
 	}
@@ -1838,11 +1899,43 @@ footer {
 		font-weight: 700;
 		margin-bottom: 80px
 	}
-	.btnWrap {
-
+	.mb-40 {
+		margin-bottom: 40px;
+	}
+	h4 {
+		color: #FFF;
+		text-align: center;
+		font-family: "SUIT Variable";
+		font-size: 40px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 144%; /* 57.6px */
+	}
+	h5 {
+		color: #FFF;
+		font-family: "SUIT Variable";
+		font-size: 32px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 144%;
+		b {
+			font-weight: 600;
+		}
+		.color {
+			font-weight: 600;
+			color: #00E5FF;
+		}
 	}
 	.trackWrap {
 		@include innerFull();
+	}
+	.trackWrap2 {
+		margin: 120px 0;
+		.track {
+			.item {
+				height: 280px;
+			}
+		}
 	}
 	.track {
 		display: flex;
@@ -1870,8 +1963,20 @@ footer {
 			font-size: $fs20;
 			margin-bottom: 32px;
 		}
+		h5 {
+			font-size: $fs14;
+		}
+		.mb-24 {
+			margin-bottom: 24px;
+		}
+		h4 {
+			font-size: $fs16;
+		}
 		.btnWrap {
 			margin-top: 40px;
+		}
+		.trackWrap2 {
+			margin: 40px 0;
 		}
 		.track {
 			.item {
