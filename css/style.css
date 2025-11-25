@@ -66,6 +66,9 @@ input {
   .d-mo {
     display: block !important;
   }
+  .enter {
+    display: block;
+  }
 }
 @keyframes bookTrack {
   from {
@@ -1363,6 +1366,9 @@ footer .info .link a {
   margin: 0;
   -webkit-text-fill-color: unset;
 }
+.section-12 .btnWrap {
+  margin-top: 120px;
+}
 .section-12 h5 {
   margin-bottom: 80px;
   font-weight: 400;
@@ -1508,6 +1514,79 @@ footer .info .link a {
 .section-12 .bgImgCard .item:nth-child(3) {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, #000 100%), url(../img/bg_section_12_bgImgCard_03.jpg) lightgray center/cover no-repeat;
 }
+.section-12 .bgImgCard .barGraph {
+  aspect-ratio: 480/560;
+  padding: 0;
+  position: relative;
+  flex: 1 0 auto;
+  width: 1px;
+  filter: drop-shadow(0 8px 8px rgba(0, 0, 0, 0.16));
+}
+.section-12 .bgImgCard .barGraph img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: contain;
+}
+.section-12 .bgImgCard .barGraph .count {
+  color: #D9D9D9;
+  text-align: center;
+  font-family: "SUIT Variable";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 144%; /* 46.08px */
+  letter-spacing: -0.96px;
+  position: absolute;
+  transform: translateX(-50%);
+  transition: 0.5s 0.5s ease-in-out;
+  opacity: 0;
+}
+.section-12 .bgImgCard .barGraph .count.white {
+  top: 47.6%;
+  left: 34%;
+}
+.section-12 .bgImgCard .barGraph .count.blue {
+  top: 26%;
+  left: 66%;
+  font-weight: 800;
+}
+.section-12 .bgImgCard .barGraph .bar {
+  position: absolute;
+  bottom: 22%;
+  left: 0;
+  width: 18%;
+  height: 0;
+  border-radius: 16px 16px 0 0;
+  transform: translateX(-50%);
+  transition: 0.5s ease-in-out;
+}
+.section-12 .bgImgCard .barGraph .bar.white {
+  background: #D9D9D9;
+  left: 34%;
+}
+.section-12 .bgImgCard .barGraph .bar.blue {
+  left: 66%;
+}
+.section-12 .bgImgCard.aos-animate .barGraph:nth-child(1) .bar.white {
+  height: 21.4%;
+}
+.section-12 .bgImgCard.aos-animate .barGraph:nth-child(1) .bar.blue {
+  height: 42.4%;
+  background: linear-gradient(180deg, #00E5FF 0%, #005BEA 100%);
+}
+.section-12 .bgImgCard.aos-animate .barGraph:nth-child(2) .bar.white {
+  height: 21%;
+}
+.section-12 .bgImgCard.aos-animate .barGraph:nth-child(2) .bar.blue {
+  height: 42%;
+  background: linear-gradient(180deg, #002A62 0%, #005BEA 100%);
+}
+.section-12 .bgImgCard.aos-animate .barGraph .count {
+  opacity: 1;
+}
 
 .section-12 + .section-12 {
   position: relative;
@@ -1631,6 +1710,15 @@ footer .info .link a {
     font-family: "SUIT Variable";
     font-size: 6.1111111111vw;
     letter-spacing: -0.66px;
+  }
+  .section-12 .bgImgCard .barGraph {
+    width: 100%;
+  }
+  .section-12 .bgImgCard .barGraph .bar {
+    border-radius: 10.286px 10.286px 0 0;
+  }
+  .section-12 .bgImgCard .barGraph .count {
+    font-size: 5.555vw;
   }
 }
 .section-13 {
@@ -1897,8 +1985,24 @@ footer .info .link a {
     transform: translateX(-100%);
   }
 }
+.section-16 .systemImg {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+.section-16 .systemImg img {
+  width: 100%;
+}
 
 @media screen and (max-width: 1024px) {
+  .section-16 .systemImg {
+    gap: 56px;
+    margin-top: 56px;
+  }
   .section-16 .inner {
     max-width: 100%;
   }

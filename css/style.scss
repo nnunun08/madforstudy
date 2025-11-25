@@ -68,6 +68,9 @@ input {
 	.d-mo {
 		display: block !important;
 	}
+	.enter {
+		display: block;
+	}
 }
 
 @mixin innerFull {
@@ -1442,6 +1445,9 @@ footer {
 		margin: 0;
 		-webkit-text-fill-color: unset;
 	}
+	.btnWrap {
+		margin-top: 120px;
+	}
 	h5 {
 		margin-bottom: 80px;
 		font-weight: 400;
@@ -1580,6 +1586,83 @@ footer {
 				background: linear-gradient(180deg, rgba(0, 0, 0, 0.30) 0%, #000 100%), url(../img/bg_section_12_bgImgCard_03.jpg) lightgray center/cover no-repeat;
 			}
 		}
+		.barGraph {
+			aspect-ratio: 480 / 560;
+			padding: 0;
+			position: relative;
+			flex: 1 0 auto;
+			width: 1px;
+			filter: drop-shadow(0 8px 8px rgba(0, 0, 0, 0.16));			
+			img {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				object-fit: contain;
+			}
+			.count {
+				color: #D9D9D9;
+				text-align: center;
+				font-family: "SUIT Variable";
+				font-size: 32px;
+				font-style: normal;
+				font-weight: 500;
+				line-height: 144%; /* 46.08px */
+				letter-spacing: -0.96px;
+				position: absolute;
+				transform: translateX(-50%);
+				transition: 0.5s 0.5s ease-in-out;
+				opacity: 0;
+				&.white {
+					top: 47.6%;
+					left: 34%;
+				}
+				&.blue {
+					top: 26%;
+					left: 66%;
+					font-weight: 800;
+				}
+			}
+			.bar {
+				position: absolute;
+				bottom: 22%;
+				left: 0;
+				width: 18%;
+				height: 0;
+				border-radius: 16px 16px 0 0;
+				transform: translateX(-50%);
+				transition: 0.5s ease-in-out;
+				&.white {
+					background: #D9D9D9;
+					left: 34%;
+				}
+				&.blue {
+					left: 66%;
+				}
+			}
+		}
+		&.aos-animate {
+			.barGraph {
+				&:nth-child(1) {
+					.bar.white {height: 21.4%;}
+					.bar.blue {
+						height: 42.4%;
+						background: linear-gradient(180deg, #00E5FF 0%, #005BEA 100%);
+					}
+				}
+				&:nth-child(2) {
+					.bar.white {height: 21%;}
+					.bar.blue {
+						height: 42%;
+						background: linear-gradient(180deg, #002A62 0%, #005BEA 100%);
+					}
+				}
+				.count {
+					opacity: 1;
+				}
+			}
+		}
 	}
 }
 .section-12 + .section-12 {
@@ -1693,6 +1776,15 @@ footer {
 				font-family: "SUIT Variable";
 				font-size: calc(22 / 360 * 100vw);
 				letter-spacing: -0.66px;
+			}
+			.barGraph {
+				width: 100%;
+				.bar {
+					border-radius: 10.286px 10.286px 0 0;
+				}
+				.count {
+					font-size: $fs20;
+				}
 			}
 		}
 	}
@@ -1953,9 +2045,27 @@ footer {
 			}
 		}
 	}
+
+	.systemImg {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+		width: 100%;
+		max-width: 1080px;
+		margin: 0 auto;
+		margin-top: 80px;
+		img {
+			width: 100%;
+		}
+	}
 }
 @media screen and (max-width:1024px) {
 	.section-16 {
+		.systemImg {
+			gap: 56px;
+			margin-top: 56px;
+		}
+
 		.inner {
 			max-width: 100%;
 		}
