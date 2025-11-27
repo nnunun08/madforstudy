@@ -1468,6 +1468,32 @@ footer {
 			margin-bottom: 40px;
 		}
 	}
+	.trackWrap {
+		@include innerFull();
+		margin-block: 80px 120px;
+		.track {
+			display: flex;
+			.item {
+				animation: imgSlide 80s linear infinite;
+				height: 430px;
+			}
+			@keyframes imgSlide {
+				from {
+					transform: translateX(0);
+				}
+				to {
+					transform: translateX(-100% );
+				}
+			}
+		}
+	}
+	.lvStep {
+		max-width: 1087px;
+		margin-block: 40px 64px;
+		img {
+			width: 100%;
+		}
+	}
 	.lvTestImg {
 		img {
 			width: 100%;
@@ -1708,8 +1734,19 @@ footer {
 				margin-bottom: 8px;
 			}
 		}
+		.trackWrap {
+			margin-block: 28px 40px;
+			.track {
+				.item {
+					height: 215px;
+				}
+			}
+		}
 		.globalImg {
 			margin: 8px 0 32px;
+		}
+		.lvStep {
+			margin-block: 32px 40px;
 		}
 		.tesolImg {
 			margin: 0;
@@ -2006,6 +2043,9 @@ footer {
 		font-weight: 700;
 		margin-bottom: 80px
 	}
+	.mb-8 {
+		margin-bottom: 8px;
+	}
 	.mb-24 {
 		margin-bottom: 24px;
 	}
@@ -2034,6 +2074,17 @@ footer {
 		.color {
 			font-weight: 600;
 			color: #00E5FF;
+		}
+	}
+	.customContents {
+		max-width: 1172px;
+		margin: 80px auto 96px;
+		.item {
+			padding: 0 16px;
+			box-sizing: border-box;
+			img {
+				width: 100%;
+			}
 		}
 	}
 	.realStart {
@@ -2120,6 +2171,23 @@ footer {
 			.item {
 				height: 210px;
 			}
+		}
+		.customContents {
+			margin: 24px auto 56px;
+			.item {
+				padding: 0 28px;
+			}
+			.slick-dots {
+				bottom: -38px;
+				li {
+					button {
+						&:before {
+							background-color: #fff;
+							border-radius: 99px;
+						}
+					}
+				} 
+			} 
 		}
 	}
 
@@ -2794,4 +2862,145 @@ footer {
 		}
 	}
 
+}
+
+.section-18 {
+	padding: 160px 0;
+	img {
+		width: 100%;
+		margin-bottom: 40px;
+	}
+	.guide {
+		margin-bottom: 24px;
+		text-align: center;
+		img {
+			width: auto;
+			margin: 0;
+		}
+	}
+}
+@media screen and (max-width:1024px) {
+	.section-18 {
+		padding: 25% 0;
+		.curriTable {
+			width: 100%;
+			height: 600px;
+			overflow: auto;
+			margin-bottom: -34px;
+			img {
+				width: 630px;
+			}
+		}
+	}
+
+}
+
+.section-19 {
+	padding: 180px 0 230px;
+	background-color: #F9F9F9;
+	.inner {
+		max-width: 1082px;
+	}
+	.item + .item {
+		border-top: 2px solid #EEE;
+		padding-top: 80px;
+		margin-top: 80px;
+	}
+	.item {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		.badge {
+			display: inline-block;
+			padding: 8px 28px;
+			border-radius: 99px;
+			background: #333;
+			color: #FFF;
+			font-family: "SUIT Variable";
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 144%; /* 23.04px */
+			letter-spacing: -0.48px;
+			margin-bottom: 32px;
+		}
+		h3 {
+			color: #000;
+			font-family: "SUIT Variable";
+			font-size: 56px;
+			font-style: normal;
+			font-weight: 800;
+			line-height: 144%; /* 80.64px */
+			letter-spacing: -1.68px;
+			margin-bottom: 8px;
+		}
+		.p1 {
+			color: #000;
+			font-family: "SUIT Variable";
+			font-size: 24px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 144%; /* 34.56px */
+			letter-spacing: -0.72px;
+		}
+		img {
+			border-radius: 24px;
+			max-width: 480px;
+			width: 100%;
+			aspect-ratio: 480 / 320;
+		}
+	}
+	.item:last-child {
+		margin-bottom: 160px;
+	}
+}
+@media screen and (max-width:1024px) {
+	.section-19 {
+		padding: 12% 0 20%;
+		.inner {
+			padding: 0;
+			max-width: 100%;
+		}
+		.item + .item {
+			border-top: 1px solid #EEE;
+			padding-top: 24px;
+			margin-top: 24px;
+		}
+		.item {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding-inline: 24px;
+			.badge {
+				font-size: $fs10;
+				margin-bottom: 8px;
+				padding: 3px 8px;
+			}
+			h3 {
+				font-size: $fs20;
+			}
+			.p1 {
+				font-size: $fs10;
+			}
+			img {
+				border-radius: 8px;
+				max-width: calc(160 / 360) * 100%;
+				aspect-ratio: 480 / 320;
+			}
+		}
+		.item:last-child {
+			margin-bottom: 60px;
+		}
+	}
+}
+
+.section-20 {
+	padding: 80px 0;
+	background: url(../img/bg_section_20.jpg) center/cover no-repeat;
+	.inner {
+		max-width: 992px;
+		img {
+			width: 100%;
+		}
+	}
 }
