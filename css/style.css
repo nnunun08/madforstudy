@@ -1286,13 +1286,19 @@ footer .info .link {
   gap: 20px;
 }
 footer .info .link a {
-  color: #888;
+  color: inherit;
   text-align: right;
   font-family: "SUIT Variable";
   font-size: 10px;
   font-style: normal;
   font-weight: 700;
   line-height: 240%; /* 24px */
+}
+footer.junior {
+  background-color: #1F84FF;
+}
+footer.junior .info {
+  color: #fff;
 }
 
 .page2-hero {
@@ -2315,11 +2321,11 @@ footer .info .link a {
     line-height: 144%; /* 11.52px */
   }
   footer .info .link {
+    white-space: nowrap;
     flex-direction: column;
     gap: 0;
   }
   footer .info .link a {
-    color: #888;
     font-size: 2.778vw;
     font-weight: 700;
     line-height: 200%;
@@ -3427,5 +3433,202 @@ footer .info .link a {
   }
   .section-24 .inner-mo {
     padding: 0 30px;
+  }
+}
+.madforJunior {
+  text-align: center;
+}
+.madforJunior .madforJunior-hero {
+  padding: 140px 0 130px;
+  background: #FBFBFB url(../img/bg_madforJunior_hero.png) center/113% no-repeat;
+  min-height: 1350px;
+  box-sizing: border-box;
+}
+.madforJunior .madforJunior-hero .titImg {
+  max-width: 826px;
+  width: 100%;
+  margin: 0 auto;
+}
+.madforJunior .madforJunior-hero .graphWrap {
+  position: relative;
+  margin: 88px auto 72px;
+  max-width: 760px;
+  aspect-ratio: 760/380;
+}
+.madforJunior .madforJunior-hero .graphWrap [class*=bar] {
+  border-radius: 16px 16px 0 0;
+  background: linear-gradient(180deg, #0038B2 0%, rgba(152, 204, 255, 0.5) 100%);
+  width: 13%;
+  height: 0;
+  position: absolute;
+  bottom: 22%;
+  transform: translateX(-50%);
+  transition: 0.5s 0.3s;
+}
+.madforJunior .madforJunior-hero .graphWrap .bar1 {
+  left: 14.7%;
+}
+.madforJunior .madforJunior-hero .graphWrap .bar2 {
+  left: 33%;
+}
+.madforJunior .madforJunior-hero .graphWrap .bar3 {
+  left: 51.9%;
+}
+.madforJunior .madforJunior-hero .graphWrap .bar4 {
+  left: 70.5%;
+}
+.madforJunior .madforJunior-hero .graphWrap .bar5 {
+  left: 88.9%;
+}
+.madforJunior .madforJunior-hero .graphWrap img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.madforJunior .madforJunior-hero .graphWrap .badgeImg {
+  transition: 0.5s 1s;
+  opacity: 0;
+}
+.madforJunior .madforJunior-hero .graphWrap.aos-init .bar1 {
+  height: 62%;
+}
+.madforJunior .madforJunior-hero .graphWrap.aos-init .bar2 {
+  height: 58%;
+}
+.madforJunior .madforJunior-hero .graphWrap.aos-init .bar3 {
+  height: 60%;
+}
+.madforJunior .madforJunior-hero .graphWrap.aos-init .bar4 {
+  height: 62%;
+}
+.madforJunior .madforJunior-hero .graphWrap.aos-init .bar5 {
+  height: 60.6%;
+}
+.madforJunior .madforJunior-hero .graphWrap.aos-init .badgeImg {
+  opacity: 1;
+}
+.madforJunior .madforJunior-hero .p1 {
+  color: #555;
+  text-align: center;
+  font-family: "SUITE Variable";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 44.8px */
+}
+@media screen and (max-width: 1024px) {
+  .madforJunior .madforJunior-hero {
+    padding: 11% 0;
+    min-height: unset;
+    background: #FBFBFB url(../img/bg_madforJunior_hero_mo.png) center/113% no-repeat;
+  }
+  .madforJunior .madforJunior-hero .titImg {
+    max-width: 826px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .madforJunior .madforJunior-hero .graphWrap {
+    margin: 20px auto 24px;
+  }
+  .madforJunior .madforJunior-hero .graphWrap [class*=bar] {
+    border-radius: 6.4px 6.4px 0 0;
+  }
+  .madforJunior .madforJunior-hero .btnWrap {
+    margin-top: 0;
+  }
+}
+.madforJunior .whochoose {
+  background-color: #4288E9;
+  overflow: hidden;
+}
+.madforJunior .whochoose img {
+  width: 100%;
+  max-width: 1128px;
+}
+@media screen and (max-width: 1024px) {
+  .madforJunior .whochoose .inner {
+    margin-left: -16px;
+    margin-right: -16px;
+    width: calc(100% + 32px);
+  }
+  .madforJunior .whochoose img {
+    margin-left: -4%;
+  }
+}
+.madforJunior .band {
+  padding: 34px 0;
+  position: relative;
+}
+.madforJunior .band img {
+  max-width: 100%;
+}
+.madforJunior .band .polygon {
+  position: absolute;
+  top: 99%;
+  left: 50%;
+  transform: translateX(-50%) scale(3, 2);
+}
+@media screen and (max-width: 1024px) {
+  .madforJunior .band {
+    padding: 13px 0;
+  }
+  .madforJunior .band img {
+    max-width: 100%;
+  }
+  .madforJunior .band .polygon {
+    top: 90%;
+    transform: translateX(-50%) scale(1.2, 1.2);
+  }
+}
+.madforJunior .bandContents {
+  padding: 110px 0;
+  overflow: hidden;
+}
+.madforJunior .bandContents img {
+  width: 100%;
+  max-width: 1200px;
+}
+@media screen and (max-width: 1024px) {
+  .madforJunior .bandContents {
+    padding: 10% 0;
+  }
+  .madforJunior .bandContents img {
+    margin-left: -16px;
+    margin-right: -16px;
+    width: calc(100% + 32px);
+    margin-left: -10%;
+    margin-right: -10%;
+    width: 120%;
+  }
+}
+.madforJunior .madforJunior-cta {
+  padding: 160px 0 142px;
+  overflow: hidden;
+  background: #f9f9f9 url(../img/bg_madforJunior_cta.png) top -10% center/110% no-repeat;
+}
+.madforJunior .madforJunior-cta .titImg {
+  max-width: 100%;
+}
+.madforJunior .madforJunior-cta .section-12 {
+  padding: 0;
+}
+.madforJunior .madforJunior-cta .section-12 .trackWrap {
+  margin-block: 40px 120px;
+}
+.madforJunior .madforJunior-cta .btnWrap {
+  margin: 0;
+}
+@media screen and (max-width: 1024px) {
+  .madforJunior .madforJunior-cta {
+    padding: 15% 0 12%;
+  }
+  .madforJunior .madforJunior-cta .titImg {
+    width: 80%;
+  }
+  .madforJunior .madforJunior-cta .section-12 .trackWrap {
+    margin-block: 14px 40px;
   }
 }/*# sourceMappingURL=style.css.map */
