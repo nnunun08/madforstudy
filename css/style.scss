@@ -1468,6 +1468,13 @@ footer {
 			margin-bottom: 40px;
 		}
 	}
+	.maxImg {
+		width: 100%;
+		margin-block: 64px;
+		img {
+			width: 100%
+		}
+	}
 	.trackWrap {
 		@include innerFull();
 		margin-block: 80px 120px;
@@ -1483,6 +1490,21 @@ footer {
 				}
 				to {
 					transform: translateX(-100% );
+				}
+			}
+			&.quickSlide {
+				transform: translateX(-50%);
+				.item {
+					animation: quickSlide 30s linear infinite;
+					// height: ;
+				}
+				@keyframes quickSlide {
+					from {
+						transform: translateX(0%);
+					}
+					to {
+						transform: translateX(-100% );
+					}
 				}
 			}
 		}
@@ -1702,6 +1724,65 @@ footer {
 		width: 100%;
 		margin: 66px 0 80px;
 	}
+	.imgTextWrap {	
+		.item {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: calc((75 / 1120) * 100%);
+			margin-bottom: 72px;
+			&.reverse {
+				margin-bottom: 128px;
+				flex-direction: row-reverse;
+			}
+			& + .item {
+				margin-top: 72px;
+			}
+			img {
+				aspect-ratio: 480 / 640;
+				max-width: 480px;
+				width: calc((480 / 1120) * 100%);
+				border-radius: 16px;
+				flex: 1 0 0;
+			}
+			.textBx {
+				flex: 1 0 auto;
+				li {
+					text-align: left;
+					padding: 40px 0;
+					border-top: 1px solid #EEE;
+					&:last-child {
+						border-bottom: 1px solid #EEE;
+					}
+				}
+				.tit {
+					color: #111;
+					font-family: "SUIT Variable";
+					font-size: 32px;
+					font-style: normal;
+					font-weight: 800;
+					line-height: 144%; /* 46.08px */
+					letter-spacing: -0.96px;
+					margin-bottom: 8px;				
+				}
+				.sub {
+					color: #111;
+					font-family: "SUIT Variable";
+					font-size: 24px;
+					font-style: normal;
+					font-weight: 500;
+					line-height: 144%; /* 34.56px */
+					letter-spacing: -0.72px;
+				}
+			}
+		}
+	}
+	&.bgGrey {
+		background: #f9f9f9;
+		.inner {
+			max-width: 1250px;
+		}
+	}
 }
 .section-12 + .section-12 {
 	position: relative;
@@ -1718,6 +1799,14 @@ footer {
 @media screen and (max-width:1024px) {
 	.section-12 {
 		padding: 60px 0;
+		&.bgGrey {
+			background: #fff;
+			padding: 12% 0;
+			border-bottom: 6px solid #F9F9F9;
+			img {
+				@include innerFull();
+			}
+		}
 		h1 {
 			font-size: $fs24;
 		}
@@ -1732,6 +1821,58 @@ footer {
 			}
 			&.mb-40 {
 				margin-bottom: 8px;
+			}
+		}
+		.hidden {
+			display: none;
+		}
+		.maxImg {
+			margin-block: 8px 32px;
+		}
+		.small {
+			font-size: $fs16;
+			margin-bottom: 6px;
+		}
+		.bgWhite {
+			background-color: #fff;
+			@include innerFull();
+			padding-block: 40px 32px;
+			margin-top: -28%;
+			margin-bottom: 32px;
+			h5 {
+				margin: 0;
+			}
+		}
+		.imgTextWrap {	
+			.item {
+				flex-direction: column;
+				gap: 30px;
+				margin-bottom: 32px;
+				&.reverse {
+					flex-direction: column;
+					margin-top: 80px;
+					margin-bottom: 32px;
+				}
+				img {
+					width: 100%;
+					border-radius: 10px;
+				}
+				.textBx {
+					width: 100%;
+					li {
+						padding: 20px 0;
+						border-top: 2.4px solid #EEE;
+						&:last-child {
+							border-bottom: 2.4px solid #EEE;
+						}
+					}
+					.tit {
+						font-size: $fs18;
+					}
+					.sub {
+						font-size: $fs13;
+					}
+				}
 			}
 		}
 		.trackWrap {
@@ -3001,6 +3142,418 @@ footer {
 		max-width: 992px;
 		img {
 			width: 100%;
+		}
+	}
+}
+
+.section-21 {
+	background: #111;
+	padding: 160px 0 173px;
+	text-align: center;
+	.inner {
+		max-width: 1232px;
+	}
+	h3 {
+		margin-bottom: 40px;
+	}
+	p {
+		color: #FFF;
+		text-align: center;
+		font-family: "SUIT Variable";
+		font-size: 40px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 144%; /* 57.6px */
+		letter-spacing: -1.2px;
+		margin-bottom: 80px;
+	}
+	img {
+		width: 100%;
+		border-radius: 16px;
+	}
+}
+@media screen and (max-width:1024px) {
+	.section-21 {
+		padding: 48px 0;
+		.inner {
+			padding: 0 30px;
+		}
+		h3 {
+			font-size: $fs20;
+			margin-bottom: 8px;
+		}
+		p {
+			font-size: $fs13;
+			margin-bottom: 24px;
+		}
+		img {
+			border-radius: 4px;
+		}
+	}
+
+}
+
+.section-22 {
+	padding: 160px 0 173px;
+	text-align: center;
+	.inner {
+		max-width: 1232px;
+	}
+	h3 {
+		margin-bottom: 40px;
+	}
+	p {
+		color: #111;
+		text-align: center;
+		font-family: "SUIT Variable";
+		font-size: 40px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 144%; /* 57.6px */
+		letter-spacing: -1.2px;
+		margin: 0;
+	}
+	img {
+		width: 100%;
+		margin: 80px 0 120px;
+	}
+}
+@media screen and (max-width:1024px) {
+	.section-22 {
+		padding: 48px 0;
+		h3 {
+			font-size: $fs20;
+			margin-bottom: 8px;
+		}
+		p {
+			font-size: $fs13;
+		}
+		img {
+			margin: 40px 0 40px;
+		}
+	}
+
+}
+
+.section-23 {
+	padding: 160px 0 173px;
+	text-align: center;
+	.inner {
+		max-width: 1232px;
+	}
+	h5 {
+		margin-bottom: 32px;
+	}
+	h3 {
+		margin-bottom: 40px;
+	}
+	p {
+		color: #111;
+		text-align: center;
+		font-family: "SUIT Variable";
+		font-size: 40px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 144%; /* 57.6px */
+		letter-spacing: -1.2px;
+		margin: 0;
+	}
+	img {
+		width: 100%;
+		margin: 80px 0 120px;
+	}
+}
+@media screen and (max-width:1024px) {
+	.section-23 {
+		padding: 48px 0 80px;
+		h5 {
+			font-size: $fs24;
+			margin-bottom: 0px;
+		}
+		p {
+			margin-top: 16px;
+			font-size: $fs14;
+		}
+		img {
+			margin: 32px 0 48px;
+		}
+	}
+
+}
+
+.section-24 {
+	text-align: center;
+	.inner {
+		max-width: 780 + 32px;
+	}
+	h5 {
+		color: #000;
+		font-family: "SUIT Variable";
+		font-size: 40px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 144%;
+		letter-spacing: -1.2px;
+		margin-bottom: 40px;
+		b {
+			font-weight: 700;
+		}
+	}
+	section {
+		padding: 88px 0 109px;
+		&:nth-child(2n) {
+			background-color: #F9F9F9;
+		}
+	}
+	.selectBtn {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 30px;
+		label {
+			max-width: 360px;
+			flex: 1 0 auto;
+		}
+		input {
+			display: none;
+		}
+		.radioBtn {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			width: 100%;
+			height: 105px;
+			color: #3B82F6;
+			font-family: "SUIT Variable";
+			font-size: 32px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 128%; /* 40.96px */
+			letter-spacing: -0.96px;
+			border-radius: 8px;
+			border: 1px solid #3B82F6;
+			background: #FFF;
+			box-sizing: border-box;
+			.small {
+				color: inherit;
+				font-family: "SUIT Variable";
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 500;
+				line-height: 160%;
+				letter-spacing: -0.48px;
+			}
+		}
+		input:checked + .radioBtn {
+			background: linear-gradient(90deg, #3B82F6 0%, #005BEA 100%);
+			color: #FFF;
+			font-family: "SUIT Variable";
+			font-size: 32px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 128%; /* 40.96px */
+			letter-spacing: -0.96px;
+		}
+	}
+	.selectCard {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 20px;
+		label {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			text-align: center;
+			flex: 1 0 50%;
+			width: 100%;
+			height: 280px;
+			max-width: calc((100% - 20px) / 2);
+			padding: 40px 0 30px;
+			border-radius: 16px;
+			box-shadow: inset 0 0 0 2px #999;
+			background: #FFF;
+			box-sizing: border-box;
+			&:has(:checked) {
+				border-radius: 16px;
+				box-shadow: inset 0 0 0 4px #005BEA;
+				background: #F3F7FF;
+			}
+		}
+		.badge {
+			margin: 0 auto;
+			border-radius: 90px;
+			background: linear-gradient(90deg, #3B82F6 0%, #005BEA 100%);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100px;
+			height: 32px;
+			gap: 8px;
+			color: #FFF;
+			font-family: "SUIT Variable";
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 128%; /* 20.48px */
+			letter-spacing: -0.48px;
+			margin-bottom: 8px;
+		}
+		.tit {
+			flex: 1 0 0;
+			color: #000;
+			text-align: center;
+			font-family: "SUIT Variable";
+			font-size: 32px;
+			font-style: normal;
+			font-weight: 800;
+			line-height: 144%; /* 46.08px */
+			letter-spacing: -0.96px;
+		}
+		.price {
+			color: #999;
+			text-align: center;
+			font-family: "SUIT Variable";
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 144%; /* 23.04px */
+			letter-spacing: -0.48px;
+			span {
+				display: block;
+			}
+			.cancel {
+				text-decoration: line-through;
+			}
+		}
+		.total {
+			color: #111;
+			font-family: "SUIT Variable";
+			font-size: 24px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 144%;
+			letter-spacing: -0.72px;
+			b {
+				color: #005BEA;
+				text-align: center;
+				font-family: "SUIT Variable";
+				font-size: 32px;
+				font-style: normal;
+				font-weight: 600;
+				line-height: 144%; /* 46.08px */
+				letter-spacing: -0.96px;
+			}
+		}
+	}
+	.btn-round {
+		width: 100%;
+		height: 72px;
+		border: 0;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+		color: #FFF;
+		text-align: center;
+		font-family: "SUIT Variable";
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 128%; /* 30.72px */
+		letter-spacing: -0.72px;
+		margin-bottom: 24px;
+	}
+	.guide {
+		text-align: left;
+		background: #EEE;
+		padding: 14px 40px;
+		color: #000;
+		font-family: "SUIT Variable";
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 160%; /* 25.6px */
+		letter-spacing: -0.48px;
+		margin-bottom: 160px;
+	}
+}
+@media screen and (max-width:1024px) {
+	.section-24 {
+		padding: 0;
+		h5 {
+			font-size: $fs20;
+			margin-bottom: 24px;
+		}
+		section {
+			padding: 42px 0;
+		}
+		.selectBtn {
+			justify-content: center;
+			flex-wrap: wrap;
+			gap: 12px;
+			label {
+				max-width: 50%;
+				min-width: 33%;
+				flex: 1 0 0;
+				white-space: nowrap;
+			}
+			.radioBtn {
+				font-size: $fs20;
+				height: auto;
+				padding-block: 19px;
+				.small {
+					display: none;
+				}
+			}
+			input:checked + .radioBtn {
+				font-size: $fs20;
+				height: auto;
+			}
+		}
+		.selectCard {
+			gap: 12px;
+			label {
+				flex: 1 0 44%;
+				width: 100%;
+				aspect-ratio: 1/1;
+				height: auto;
+				max-width: 50%;
+				padding: 20px 16px 10px;
+			}
+			.badge {
+				font-size: $fs12;
+				padding: 6px 12px;
+				width: auto;
+				height: auto;
+				min-height: 24px;
+				box-sizing: border-box;
+				margin-bottom: 13px;
+			}
+			.tit {
+				font-size: $fs20;
+			}
+			.price {
+				display: none;
+			}
+			.total {
+				font-size: $fs16;
+				b {
+					font-size: $fs20;
+				}
+			}
+		}
+		.btn-round {
+			font-size: $fs16;
+			height: 52px;
+			margin-bottom: 24px;
+		}
+		.guide {
+			padding: 13px 12px;
+			font-size: $fs12;
+			margin-bottom: 100px;
+		}
+		.inner-mo {
+			padding: 0 30px;
 		}
 	}
 }

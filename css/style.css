@@ -1389,6 +1389,13 @@ footer .info .link a {
 .section-12 h5.mb-40 {
   margin-bottom: 40px;
 }
+.section-12 .maxImg {
+  width: 100%;
+  margin-block: 64px;
+}
+.section-12 .maxImg img {
+  width: 100%;
+}
 .section-12 .trackWrap {
   margin-left: -16px;
   margin-right: -16px;
@@ -1405,6 +1412,20 @@ footer .info .link a {
 @keyframes imgSlide {
   from {
     transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.section-12 .trackWrap .track.quickSlide {
+  transform: translateX(-50%);
+}
+.section-12 .trackWrap .track.quickSlide .item {
+  animation: quickSlide 30s linear infinite;
+}
+@keyframes quickSlide {
+  from {
+    transform: translateX(0%);
   }
   to {
     transform: translateX(-100%);
@@ -1625,6 +1646,63 @@ footer .info .link a {
   width: 100%;
   margin: 66px 0 80px;
 }
+.section-12 .imgTextWrap .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6.6964285714%;
+  margin-bottom: 72px;
+}
+.section-12 .imgTextWrap .item.reverse {
+  margin-bottom: 128px;
+  flex-direction: row-reverse;
+}
+.section-12 .imgTextWrap .item + .item {
+  margin-top: 72px;
+}
+.section-12 .imgTextWrap .item img {
+  aspect-ratio: 480/640;
+  max-width: 480px;
+  width: 42.8571428571%;
+  border-radius: 16px;
+  flex: 1 0 0;
+}
+.section-12 .imgTextWrap .item .textBx {
+  flex: 1 0 auto;
+}
+.section-12 .imgTextWrap .item .textBx li {
+  text-align: left;
+  padding: 40px 0;
+  border-top: 1px solid #EEE;
+}
+.section-12 .imgTextWrap .item .textBx li:last-child {
+  border-bottom: 1px solid #EEE;
+}
+.section-12 .imgTextWrap .item .textBx .tit {
+  color: #111;
+  font-family: "SUIT Variable";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 144%; /* 46.08px */
+  letter-spacing: -0.96px;
+  margin-bottom: 8px;
+}
+.section-12 .imgTextWrap .item .textBx .sub {
+  color: #111;
+  font-family: "SUIT Variable";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 144%; /* 34.56px */
+  letter-spacing: -0.72px;
+}
+.section-12.bgGrey {
+  background: #f9f9f9;
+}
+.section-12.bgGrey .inner {
+  max-width: 1250px;
+}
 
 .section-12 + .section-12 {
   position: relative;
@@ -1643,6 +1721,16 @@ footer .info .link a {
   .section-12 {
     padding: 60px 0;
   }
+  .section-12.bgGrey {
+    background: #fff;
+    padding: 12% 0;
+    border-bottom: 6px solid #F9F9F9;
+  }
+  .section-12.bgGrey img {
+    margin-left: -16px;
+    margin-right: -16px;
+    width: calc(100% + 32px);
+  }
   .section-12 h1 {
     font-size: 6.667vw;
   }
@@ -1658,6 +1746,58 @@ footer .info .link a {
   }
   .section-12 h5.mb-40 {
     margin-bottom: 8px;
+  }
+  .section-12 .hidden {
+    display: none;
+  }
+  .section-12 .maxImg {
+    margin-block: 8px 32px;
+  }
+  .section-12 .small {
+    font-size: 4.444vw;
+    margin-bottom: 6px;
+  }
+  .section-12 .bgWhite {
+    background-color: #fff;
+    margin-left: -16px;
+    margin-right: -16px;
+    width: calc(100% + 32px);
+    padding-block: 40px 32px;
+    margin-top: -28%;
+    margin-bottom: 32px;
+  }
+  .section-12 .bgWhite h5 {
+    margin: 0;
+  }
+  .section-12 .imgTextWrap .item {
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 32px;
+  }
+  .section-12 .imgTextWrap .item.reverse {
+    flex-direction: column;
+    margin-top: 80px;
+    margin-bottom: 32px;
+  }
+  .section-12 .imgTextWrap .item img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .section-12 .imgTextWrap .item .textBx {
+    width: 100%;
+  }
+  .section-12 .imgTextWrap .item .textBx li {
+    padding: 20px 0;
+    border-top: 2.4px solid #EEE;
+  }
+  .section-12 .imgTextWrap .item .textBx li:last-child {
+    border-bottom: 2.4px solid #EEE;
+  }
+  .section-12 .imgTextWrap .item .textBx .tit {
+    font-size: 5vw;
+  }
+  .section-12 .imgTextWrap .item .textBx .sub {
+    font-size: 3.611vw;
   }
   .section-12 .trackWrap {
     margin-block: 28px 40px;
@@ -2878,4 +3018,414 @@ footer .info .link a {
 }
 .section-20 .inner img {
   width: 100%;
+}
+
+.section-21 {
+  background: #111;
+  padding: 160px 0 173px;
+  text-align: center;
+}
+.section-21 .inner {
+  max-width: 1232px;
+}
+.section-21 h3 {
+  margin-bottom: 40px;
+}
+.section-21 p {
+  color: #FFF;
+  text-align: center;
+  font-family: "SUIT Variable";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 144%; /* 57.6px */
+  letter-spacing: -1.2px;
+  margin-bottom: 80px;
+}
+.section-21 img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+  .section-21 {
+    padding: 48px 0;
+  }
+  .section-21 .inner {
+    padding: 0 30px;
+  }
+  .section-21 h3 {
+    font-size: 5.555vw;
+    margin-bottom: 8px;
+  }
+  .section-21 p {
+    font-size: 3.611vw;
+    margin-bottom: 24px;
+  }
+  .section-21 img {
+    border-radius: 4px;
+  }
+}
+.section-22 {
+  padding: 160px 0 173px;
+  text-align: center;
+}
+.section-22 .inner {
+  max-width: 1232px;
+}
+.section-22 h3 {
+  margin-bottom: 40px;
+}
+.section-22 p {
+  color: #111;
+  text-align: center;
+  font-family: "SUIT Variable";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 144%; /* 57.6px */
+  letter-spacing: -1.2px;
+  margin: 0;
+}
+.section-22 img {
+  width: 100%;
+  margin: 80px 0 120px;
+}
+
+@media screen and (max-width: 1024px) {
+  .section-22 {
+    padding: 48px 0;
+  }
+  .section-22 h3 {
+    font-size: 5.555vw;
+    margin-bottom: 8px;
+  }
+  .section-22 p {
+    font-size: 3.611vw;
+  }
+  .section-22 img {
+    margin: 40px 0 40px;
+  }
+}
+.section-23 {
+  padding: 160px 0 173px;
+  text-align: center;
+}
+.section-23 .inner {
+  max-width: 1232px;
+}
+.section-23 h5 {
+  margin-bottom: 32px;
+}
+.section-23 h3 {
+  margin-bottom: 40px;
+}
+.section-23 p {
+  color: #111;
+  text-align: center;
+  font-family: "SUIT Variable";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 144%; /* 57.6px */
+  letter-spacing: -1.2px;
+  margin: 0;
+}
+.section-23 img {
+  width: 100%;
+  margin: 80px 0 120px;
+}
+
+@media screen and (max-width: 1024px) {
+  .section-23 {
+    padding: 48px 0 80px;
+  }
+  .section-23 h5 {
+    font-size: 6.667vw;
+    margin-bottom: 0px;
+  }
+  .section-23 p {
+    margin-top: 16px;
+    font-size: 3.888vw;
+  }
+  .section-23 img {
+    margin: 32px 0 48px;
+  }
+}
+.section-24 {
+  text-align: center;
+}
+.section-24 .inner {
+  max-width: 812px;
+}
+.section-24 h5 {
+  color: #000;
+  font-family: "SUIT Variable";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 144%;
+  letter-spacing: -1.2px;
+  margin-bottom: 40px;
+}
+.section-24 h5 b {
+  font-weight: 700;
+}
+.section-24 section {
+  padding: 88px 0 109px;
+}
+.section-24 section:nth-child(2n) {
+  background-color: #F9F9F9;
+}
+.section-24 .selectBtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.section-24 .selectBtn label {
+  max-width: 360px;
+  flex: 1 0 auto;
+}
+.section-24 .selectBtn input {
+  display: none;
+}
+.section-24 .selectBtn .radioBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 105px;
+  color: #3B82F6;
+  font-family: "SUIT Variable";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 128%; /* 40.96px */
+  letter-spacing: -0.96px;
+  border-radius: 8px;
+  border: 1px solid #3B82F6;
+  background: #FFF;
+  box-sizing: border-box;
+}
+.section-24 .selectBtn .radioBtn .small {
+  color: inherit;
+  font-family: "SUIT Variable";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  letter-spacing: -0.48px;
+}
+.section-24 .selectBtn input:checked + .radioBtn {
+  background: linear-gradient(90deg, #3B82F6 0%, #005BEA 100%);
+  color: #FFF;
+  font-family: "SUIT Variable";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 128%; /* 40.96px */
+  letter-spacing: -0.96px;
+}
+.section-24 .selectCard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.section-24 .selectCard label {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  flex: 1 0 50%;
+  width: 100%;
+  height: 280px;
+  max-width: calc((100% - 20px) / 2);
+  padding: 40px 0 30px;
+  border-radius: 16px;
+  box-shadow: inset 0 0 0 2px #999;
+  background: #FFF;
+  box-sizing: border-box;
+}
+.section-24 .selectCard label:has(:checked) {
+  border-radius: 16px;
+  box-shadow: inset 0 0 0 4px #005BEA;
+  background: #F3F7FF;
+}
+.section-24 .selectCard .badge {
+  margin: 0 auto;
+  border-radius: 90px;
+  background: linear-gradient(90deg, #3B82F6 0%, #005BEA 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 32px;
+  gap: 8px;
+  color: #FFF;
+  font-family: "SUIT Variable";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 128%; /* 20.48px */
+  letter-spacing: -0.48px;
+  margin-bottom: 8px;
+}
+.section-24 .selectCard .tit {
+  flex: 1 0 0;
+  color: #000;
+  text-align: center;
+  font-family: "SUIT Variable";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 144%; /* 46.08px */
+  letter-spacing: -0.96px;
+}
+.section-24 .selectCard .price {
+  color: #999;
+  text-align: center;
+  font-family: "SUIT Variable";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 144%; /* 23.04px */
+  letter-spacing: -0.48px;
+}
+.section-24 .selectCard .price span {
+  display: block;
+}
+.section-24 .selectCard .price .cancel {
+  text-decoration: line-through;
+}
+.section-24 .selectCard .total {
+  color: #111;
+  font-family: "SUIT Variable";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 144%;
+  letter-spacing: -0.72px;
+}
+.section-24 .selectCard .total b {
+  color: #005BEA;
+  text-align: center;
+  font-family: "SUIT Variable";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 144%; /* 46.08px */
+  letter-spacing: -0.96px;
+}
+.section-24 .btn-round {
+  width: 100%;
+  height: 72px;
+  border: 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  text-align: center;
+  font-family: "SUIT Variable";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 128%; /* 30.72px */
+  letter-spacing: -0.72px;
+  margin-bottom: 24px;
+}
+.section-24 .guide {
+  text-align: left;
+  background: #EEE;
+  padding: 14px 40px;
+  color: #000;
+  font-family: "SUIT Variable";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 25.6px */
+  letter-spacing: -0.48px;
+  margin-bottom: 160px;
+}
+
+@media screen and (max-width: 1024px) {
+  .section-24 {
+    padding: 0;
+  }
+  .section-24 h5 {
+    font-size: 5.555vw;
+    margin-bottom: 24px;
+  }
+  .section-24 section {
+    padding: 42px 0;
+  }
+  .section-24 .selectBtn {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .section-24 .selectBtn label {
+    max-width: 50%;
+    min-width: 33%;
+    flex: 1 0 0;
+    white-space: nowrap;
+  }
+  .section-24 .selectBtn .radioBtn {
+    font-size: 5.555vw;
+    height: auto;
+    padding-block: 19px;
+  }
+  .section-24 .selectBtn .radioBtn .small {
+    display: none;
+  }
+  .section-24 .selectBtn input:checked + .radioBtn {
+    font-size: 5.555vw;
+    height: auto;
+  }
+  .section-24 .selectCard {
+    gap: 12px;
+  }
+  .section-24 .selectCard label {
+    flex: 1 0 44%;
+    width: 100%;
+    aspect-ratio: 1/1;
+    height: auto;
+    max-width: 50%;
+    padding: 20px 16px 10px;
+  }
+  .section-24 .selectCard .badge {
+    font-size: 3.333vw;
+    padding: 6px 12px;
+    width: auto;
+    height: auto;
+    min-height: 24px;
+    box-sizing: border-box;
+    margin-bottom: 13px;
+  }
+  .section-24 .selectCard .tit {
+    font-size: 5.555vw;
+  }
+  .section-24 .selectCard .price {
+    display: none;
+  }
+  .section-24 .selectCard .total {
+    font-size: 4.444vw;
+  }
+  .section-24 .selectCard .total b {
+    font-size: 5.555vw;
+  }
+  .section-24 .btn-round {
+    font-size: 4.444vw;
+    height: 52px;
+    margin-bottom: 24px;
+  }
+  .section-24 .guide {
+    padding: 13px 12px;
+    font-size: 3.333vw;
+    margin-bottom: 100px;
+  }
+  .section-24 .inner-mo {
+    padding: 0 30px;
+  }
 }/*# sourceMappingURL=style.css.map */
