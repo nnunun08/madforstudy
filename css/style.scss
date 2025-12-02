@@ -71,12 +71,18 @@ input {
 	.enter {
 		display: block;
 	}
+	// 1203 update
+	// 모바일 양쪽 패딩 + 2
+	.inner {
+		padding-inline: 20px;
+	}
 }
-
+// 1203 update
+// 모바일 양쪽 패딩 + 2
 @mixin innerFull {
-	margin-left: -16px;
-	margin-right: -16px;
-	width: calc(100% + 32px);
+	margin-left: -20px;
+	margin-right: -20px;
+	width: calc(100% + 40px);
 }
 
 @keyframes bookTrack {
