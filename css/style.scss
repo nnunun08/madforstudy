@@ -985,6 +985,7 @@ p.p2 {
 			padding: 0;
 		}
 		button:before {
+			content: '';
 			position: static;
 			width: 16px;
 			height: 16px;
@@ -3180,8 +3181,45 @@ footer {
 		margin-bottom: 80px;
 	}
 	img {
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.graphImgWrap {
+		position: relative;
+		aspect-ratio: 1200 / 700;
 		width: 100%;
 		border-radius: 16px;
+		overflow: hidden;
+		.blind {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			right: 0;
+			background-color: #fff;
+		}
+		[class*="obj"] {
+			opacity: 0;
+			transition-duration: 0.3s;
+		}
+		&.aos-animate {
+			[class*="obj"] {opacity: 1;}
+			.obj1 {transition-delay: 0.4s}
+			.obj2 {transition-delay: 0.5s}
+			.obj3 {transition-delay: 0.6s}
+			.obj4 {transition-delay: 0.7s}
+			.obj5 {transition-delay: 0.8s}
+			.obj6 {transition-delay: 0.9s}
+			.obj7 {transition-delay: 1s}
+			.blind {
+				width: 0;
+				transition: 0.9s 0.5s;
+			}
+		}
 	}
 }
 @media screen and (max-width:1024px) {
@@ -3198,7 +3236,7 @@ footer {
 			font-size: $fs13;
 			margin-bottom: 24px;
 		}
-		img {
+		.graphImgWrap {
 			border-radius: 4px;
 		}
 	}
@@ -3273,6 +3311,24 @@ footer {
 	img {
 		width: 100%;
 		margin: 80px 0 120px;
+	}
+	.cloudLayerWrap {
+		position: relative;
+		opacity: 1 !important;
+		.cloudLayer {
+			height: 48%;
+			width: 100%;
+			left: 0;
+			bottom: 0;
+			position: absolute;
+			background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 4.04%);
+		}
+		&.aos-animate {
+			.cloudLayer {
+				height: 0;
+				transition: 0.7s 0.3s;
+			}
+		}
 	}
 }
 @media screen and (max-width:1024px) {

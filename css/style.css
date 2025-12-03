@@ -911,6 +911,7 @@ p.p2 {
   padding: 0;
 }
 .section-05 .slick-dots li button:before {
+  content: "";
   position: static;
   width: 16px;
   height: 16px;
@@ -3052,8 +3053,59 @@ footer.junior .info {
   margin-bottom: 80px;
 }
 .section-21 img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.section-21 .graphImgWrap {
+  position: relative;
+  aspect-ratio: 1200/700;
   width: 100%;
   border-radius: 16px;
+  overflow: hidden;
+}
+.section-21 .graphImgWrap .blind {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+}
+.section-21 .graphImgWrap [class*=obj] {
+  opacity: 0;
+  transition-duration: 0.3s;
+}
+.section-21 .graphImgWrap.aos-animate [class*=obj] {
+  opacity: 1;
+}
+.section-21 .graphImgWrap.aos-animate .obj1 {
+  transition-delay: 0.4s;
+}
+.section-21 .graphImgWrap.aos-animate .obj2 {
+  transition-delay: 0.5s;
+}
+.section-21 .graphImgWrap.aos-animate .obj3 {
+  transition-delay: 0.6s;
+}
+.section-21 .graphImgWrap.aos-animate .obj4 {
+  transition-delay: 0.7s;
+}
+.section-21 .graphImgWrap.aos-animate .obj5 {
+  transition-delay: 0.8s;
+}
+.section-21 .graphImgWrap.aos-animate .obj6 {
+  transition-delay: 0.9s;
+}
+.section-21 .graphImgWrap.aos-animate .obj7 {
+  transition-delay: 1s;
+}
+.section-21 .graphImgWrap.aos-animate .blind {
+  width: 0;
+  transition: 0.9s 0.5s;
 }
 
 @media screen and (max-width: 1024px) {
@@ -3071,7 +3123,7 @@ footer.junior .info {
     font-size: 3.611vw;
     margin-bottom: 24px;
   }
-  .section-21 img {
+  .section-21 .graphImgWrap {
     border-radius: 4px;
   }
 }
@@ -3143,6 +3195,22 @@ footer.junior .info {
 .section-23 img {
   width: 100%;
   margin: 80px 0 120px;
+}
+.section-23 .cloudLayerWrap {
+  position: relative;
+  opacity: 1 !important;
+}
+.section-23 .cloudLayerWrap .cloudLayer {
+  height: 48%;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFF 4.04%);
+}
+.section-23 .cloudLayerWrap.aos-animate .cloudLayer {
+  height: 0;
+  transition: 0.7s 0.3s;
 }
 
 @media screen and (max-width: 1024px) {
