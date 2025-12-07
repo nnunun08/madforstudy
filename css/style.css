@@ -3702,4 +3702,225 @@ footer.junior .info {
   .madforJunior .madforJunior-cta .section-12 .trackWrap {
     margin-block: 14px 40px;
   }
+}
+
+.section-25 {
+  text-align: center;
+  padding: 200px 0 40px;
+}
+.section-25 .inner {
+  max-width: 1232px;
+}
+.section-25 h1 {
+  margin-bottom: 32px;
+}
+.section-25 h5 {
+  margin-bottom: 64px;
+}
+.section-25 .p1 {
+  display: inline-block;
+  color: #555;
+  text-align: center;
+  font-family: "SUIT Variable";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 144%; /* 34.56px */
+  background: #F3F7FB;
+  padding: 6px 24px;
+  margin-bottom: 40px;
+}
+.section-25 input[type=radio] {
+  display: none;
+}
+.section-25 .tab-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 32px 24px;
+}
+.section-25 .tab-list label {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 56px;
+  border-radius: 90px;
+  border: 1px solid #555;
+  box-sizing: border-box;
+  color: #555;
+  text-align: center;
+  font-family: "SUIT Variable";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 132%; /* 42.24px */
+  letter-spacing: -0.96px;
+}
+.section-25 #tab1:checked ~ .tab-list label[for=tab1],
+.section-25 #tab2:checked ~ .tab-list label[for=tab2],
+.section-25 #tab3:checked ~ .tab-list label[for=tab3],
+.section-25 #tab4:checked ~ .tab-list label[for=tab4],
+.section-25 #tab5:checked ~ .tab-list label[for=tab5],
+.section-25 #tab6:checked ~ .tab-list label[for=tab6],
+.section-25 #tab7:checked ~ .tab-list label[for=tab7],
+.section-25 #tab8:checked ~ .tab-list label[for=tab8],
+.section-25 #tab9:checked ~ .tab-list label[for=tab9],
+.section-25 #tab10:checked ~ .tab-list label[for=tab10] {
+  background: #3B82F6;
+  border-color: #3B82F6;
+  color: #FFF;
+  text-align: center;
+  font-family: "SUIT Variable";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 132%; /* 42.24px */
+  letter-spacing: -0.96px;
+}
+.section-25 .tab-panel {
+  display: none;
+  margin-top: 64px;
+  height: 1350px;
+  border-radius: 40px;
+  background: #F9F9F9;
+  padding: 80px 100px;
+  gap: 32px;
+  flex-direction: column;
+}
+.section-25 .tab-panel .item {
+  border-radius: 8px;
+  border: 1px solid #555;
+  background: #FFF;
+  padding: 26px 0 26px 40px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.section-25 .tab-panel [class*=lv] {
+  padding: 8px 24px;
+  border-radius: 4px;
+  color: #FFF;
+  font-family: "SUIT Variable";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 132%; /* 52.8px */
+  letter-spacing: -1.2px;
+}
+.section-25 .tab-panel .lv-yellow {
+  background-color: #FFB919;
+}
+.section-25 .tab-panel .lv-green {
+  background-color: #73B84D;
+}
+.section-25 .tab-panel .lv-sky {
+  background-color: #49ADFE;
+}
+.section-25 .tab-panel .lv-blue {
+  background-color: #3E78FE;
+}
+.section-25 .tab-panel .name {
+  color: #000;
+  font-family: "SUIT Variable";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 132%; /* 63.36px */
+  letter-spacing: -1.44px;
+}
+.section-25 #tab1:checked ~ .tab-panels #panel1,
+.section-25 #tab2:checked ~ .tab-panels #panel2,
+.section-25 #tab3:checked ~ .tab-panels #panel3,
+.section-25 #tab4:checked ~ .tab-panels #panel4,
+.section-25 #tab5:checked ~ .tab-panels #panel5,
+.section-25 #tab6:checked ~ .tab-panels #panel6,
+.section-25 #tab7:checked ~ .tab-panels #panel7,
+.section-25 #tab8:checked ~ .tab-panels #panel8,
+.section-25 #tab9:checked ~ .tab-panels #panel9,
+.section-25 #tab10:checked ~ .tab-panels #panel10 {
+  display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+  .section-25 {
+    padding: 25% 0 0;
+  }
+  .section-25 .inner {
+    max-width: 1232px;
+  }
+  .section-25 h1 {
+    font-size: 6.667vw;
+    margin-bottom: 16px;
+  }
+  .section-25 h5 {
+    font-size: 3.888vw;
+    margin-bottom: 32px;
+  }
+  .section-25 .p1 {
+    display: none;
+  }
+  .section-25 input[type=radio] {
+    display: none;
+  }
+  .section-25 .tab-list {
+    margin-left: -20px;
+    margin-right: -20px;
+    width: calc(100% + 40px);
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 2.5%;
+    overflow: auto;
+  }
+  .section-25 .tab-list::after, .section-25 .tab-list::before {
+    content: "";
+    padding-left: 16px;
+  }
+  .section-25 .tab-list label {
+    padding: 3% 7.7%;
+    font-size: 3.333vw;
+    letter-spacing: -0.36px;
+  }
+  .section-25 #tab1:checked ~ .tab-list label[for=tab1],
+  .section-25 #tab2:checked ~ .tab-list label[for=tab2],
+  .section-25 #tab3:checked ~ .tab-list label[for=tab3],
+  .section-25 #tab4:checked ~ .tab-list label[for=tab4],
+  .section-25 #tab5:checked ~ .tab-list label[for=tab5],
+  .section-25 #tab6:checked ~ .tab-list label[for=tab6],
+  .section-25 #tab7:checked ~ .tab-list label[for=tab7],
+  .section-25 #tab8:checked ~ .tab-list label[for=tab8],
+  .section-25 #tab9:checked ~ .tab-list label[for=tab9],
+  .section-25 #tab10:checked ~ .tab-list label[for=tab10] {
+    font-size: 3.333vw;
+  }
+  .section-25 .tab-panel {
+    margin-top: 16px;
+    height: auto;
+    min-height: 380px;
+    aspect-ratio: 360/380;
+    padding: 11% 0;
+    border-radius: 0;
+    gap: 2.5%;
+    box-sizing: border-box;
+    align-items: center;
+    margin-left: -20px;
+    margin-right: -20px;
+    width: calc(100% + 40px);
+  }
+  .section-25 .tab-panel .item {
+    width: 70%;
+    border-radius: 1%;
+    padding: 1.5% 3.5%;
+    gap: 2%;
+  }
+  .section-25 .tab-panel [class*=lv] {
+    padding: 2px 6px;
+    border-radius: 1px;
+    font-size: 2.778vw;
+  }
+  .section-25 .tab-panel .name {
+    font-size: 2.778vw;
+  }
 }/*# sourceMappingURL=style.css.map */
