@@ -141,168 +141,328 @@
 
 
     <div class="section-24">
-        <section>
+        <section class="sec" style="display: block; background-color: #F9F9F9;">
             <div class="inner">
                 <h5>
-                    <b>튜터</b>를 선택해 주세요
+                    <b>수업 타입</b>을 선택해 주세요
                 </h5>
                 <div class="selectBtn">
                     <label>
-                        <input type="radio" name="radio1" checked>
-                        <div class="radioBtn">영미권 강사</div>
+                        <input id="tab1" type="radio" name="radio0" checked>
+                        <div class="radioBtn">고정 수업</div>
                     </label>
                     <label>
-                        <input type="radio" name="radio1">
-                        <div class="radioBtn">필리핀 강사</div>
+                        <input id="tab2" type="radio" name="radio0">
+                        <div class="radioBtn">하루 수업</div>
                     </label>
                 </div>
             </div>
         </section>
-        <section>
-            <div class="inner">
-                <h5>
-                    <b>수업 방법</b>을 선택해 주세요
-                </h5>
-                <div class="selectBtn">
-                    <label>
-                        <input type="radio" name="radio2">
-                        <div class="radioBtn">
-                            화상 영어
-                            <div class="small">(휴대폰, PC, 태블릿 PC 모두 가능)</div>
-                        </div>
-                    </label>
-                    <label>
-                        <input type="radio" name="radio2" checked>
-                        <div class="radioBtn">전화 영어</div>
-                    </label>
+
+        <div class="panel1 ac">
+            <section class="sec">
+                <div class="inner">
+                    <h5>
+                        <b>튜터</b>를 선택해 주세요
+                    </h5>
+                    <div class="selectBtn">
+                        <label>
+                            <input type="radio" name="radio1" checked>
+                            <div class="radioBtn">영미권 강사</div>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio1">
+                            <div class="radioBtn">필리핀 강사</div>
+                        </label>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section>
-            <div class="inner">
-                <h5>
-                    <b>수업 횟수</b>를 선택해 주세요
-                </h5>
-                <div class="selectBtn">
-                    <label>
-                        <input type="radio" name="radio3" checked>
-                        <div class="radioBtn">
-                            주 2회 (월 8회)
-                        </div>
-                    </label>
-                    <label>
-                        <input type="radio" name="radio3">
-                        <div class="radioBtn">
-                            주 3회 (월 12회)
-                        </div>
-                    </label>
-                    <label>
-                        <input type="radio" name="radio3">
-                        <div class="radioBtn">
-                            주 5회 (월  20회)
-                        </div>
-                    </label>
+            </section>
+            <section class="sec">
+                <div class="inner">
+                    <h5>
+                        <b>수업 방법</b>을 선택해 주세요
+                    </h5>
+                    <div class="selectBtn">
+                        <label>
+                            <input type="radio" name="radio2">
+                            <div class="radioBtn">
+                                화상 영어
+                                <div class="small">(휴대폰, PC, 태블릿 PC 모두 가능)</div>
+                            </div>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio2" checked>
+                            <div class="radioBtn">전화 영어</div>
+                        </label>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section>
-            <div class="inner">
-                <h5>
-                    <b>수업 시간</b>을 선택해 주세요
-                </h5>
-                <div class="selectBtn">
-                    <label>
-                        <input type="radio" name="radio4">
-                        <div class="radioBtn">
-                            10분
-                        </div>
-                    </label>
-                    <label>
-                        <input type="radio" name="radio4" checked>
-                        <div class="radioBtn">
-                            20분
-                        </div>
-                    </label>
-                    <label>
-                        <input type="radio" name="radio4">
-                        <div class="radioBtn">
-                            30분
-                        </div>
-                    </label>
+            </section>
+            <section class="sec">
+                <div class="inner">
+                    <h5>
+                        <b>수업 횟수</b>를 선택해 주세요
+                    </h5>
+                    <div class="selectBtn">
+                        <label>
+                            <input type="radio" name="radio3" checked>
+                            <div class="radioBtn">
+                                주 2회 (월 8회)
+                            </div>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio3">
+                            <div class="radioBtn">
+                                주 3회 (월 12회)
+                            </div>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio3">
+                            <div class="radioBtn">
+                                주 5회 (월  20회)
+                            </div>
+                        </label>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section>
-            <div class="inner">
-                <h5>
-                    <b>학습 기간</b>을 선택해 주세요
-                </h5>
-                <div class="selectCard">
-                    <label>
-                        <input type="radio" name="radio5">
-                        <div class="badge" style="opacity: 0;"></div>
-                        <div class="tit">
-                            [1개월] 총 8회
-                        </div>
-                        <div class="price">
-                            <span class="cancel"></span>
-                            <span>총 200,000원</span>
-                        </div>
-                        <div class="total">
-                            <b>200,000원</b> /월
-                        </div>
-                    </label>
-                    <label>
-                        <input type="radio" name="radio5">
-                        <div class="badge">
-                            10% 할인
-                        </div>
-                        <div class="tit">
-                            [1개월 정기결제] 총 8회
-                        </div>
-                        <div class="price">
-                            <span class="cancel">200,000원</span>
-                            <span>총  180,000원</span>
-                        </div>
-                        <div class="total">
-                            <b>180,000원</b> /월
-                        </div>
-                    </label>
-                    <label>
-                        <input type="radio" name="radio5">
-                        <div class="badge">
-                            40% 할인
-                        </div>
-                        <div class="tit">
-                            [3개월] 총 24회
-                        </div>
-                        <div class="price">
-                            <span class="cancel">600,000원</span>
-                            <span>총  360,000원</span>
-                        </div>
-                        <div class="total">
-                            <b>120,000원</b> /월
-                        </div>
-                    </label>
-                    <label>
-                        <input type="radio" name="radio5" checked>
-                        <div class="badge">
-                            45% 할인
-                        </div>
-                        <div class="tit">
-                            [6개월] 총 48회
-                        </div>
-                        <div class="price">
-                            <span class="cancel">1,200,000원</span>
-                            <span>총  660,000원원</span>
-                        </div>
-                        <div class="total">
-                            <b>110,000원</b> /월
-                        </div>
-                    </label>
+            </section>
+            <section class="sec">
+                <div class="inner">
+                    <h5>
+                        <b>수업 시간</b>을 선택해 주세요
+                    </h5>
+                    <div class="selectBtn">
+                        <label>
+                            <input type="radio" name="radio4">
+                            <div class="radioBtn">
+                                10분
+                            </div>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio4" checked>
+                            <div class="radioBtn">
+                                20분
+                            </div>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio4">
+                            <div class="radioBtn">
+                                30분
+                            </div>
+                        </label>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+            <section class="sec">
+                <div class="inner">
+                    <h5>
+                        <b>학습 기간</b>을 선택해 주세요
+                    </h5>
+                    <div class="selectCard">
+                        <label>
+                            <input type="radio" name="radio5">
+                            <div class="badge" style="opacity: 0;"></div>
+                            <div class="tit">
+                                [1개월] 총 8회
+                            </div>
+                            <div class="price">
+                                <span class="cancel"></span>
+                                <span>총 200,000원</span>
+                            </div>
+                            <div class="total">
+                                <b>200,000원</b> /월
+                            </div>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio5">
+                            <div class="badge">
+                                10% 할인
+                            </div>
+                            <div class="tit">
+                                [1개월 정기결제] 총 8회
+                            </div>
+                            <div class="price">
+                                <span class="cancel">200,000원</span>
+                                <span>총  180,000원</span>
+                            </div>
+                            <div class="total">
+                                <b>180,000원</b> /월
+                            </div>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio5">
+                            <div class="badge">
+                                40% 할인
+                            </div>
+                            <div class="tit">
+                                [3개월] 총 24회
+                            </div>
+                            <div class="price">
+                                <span class="cancel">600,000원</span>
+                                <span>총  360,000원</span>
+                            </div>
+                            <div class="total">
+                                <b>120,000원</b> /월
+                            </div>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio5" checked>
+                            <div class="badge">
+                                45% 할인
+                            </div>
+                            <div class="tit">
+                                [6개월] 총 48회
+                            </div>
+                            <div class="price">
+                                <span class="cancel">1,200,000원</span>
+                                <span>총  660,000원원</span>
+                            </div>
+                            <div class="total">
+                                <b>110,000원</b> /월
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="panel2">
+            <section class="sec">
+                <div class="inner">
+                    <h5>
+                        <b>하루 수업 쿠폰</b>을 선택해 주세요
+                    </h5>
+                    <div class="selectCard">
+                        <label>
+                            <input type="radio" name="radio6" checked>
+                            <div class="badge">
+                                40% 할인
+                            </div>
+                            <div class="tit">
+                                [필리핀] 20장
+                            </div>
+                            <div class="price">
+                                <span class="cancel">128,000원</span>
+                                <span>총  76,800원</span>
+                            </div>
+                            <div class="total">
+                                <b>76,800원</b> /월
+                            </div>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio6">
+                            <div class="badge">
+                                43% 할인
+                            </div>
+                            <div class="tit">
+                                [필리핀] 30장
+                            </div>
+                            <div class="price">
+                                <span class="cancel">192,000원</span>
+                                <span>총  109,400원</span>
+                            </div>
+                            <div class="total">
+                                <b>109,400원</b> /월
+                            </div>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio6">
+                            <div class="badge">
+                                45% 할인
+                            </div>
+                            <div class="tit">
+                                [필리핀] 40장
+                            </div>
+                            <div class="price">
+                                <span class="cancel">256,000원</span>
+                                <span>총  140,800원</span>
+                            </div>
+                            <div class="total">
+                                <b>140,800원</b> /월
+                            </div>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio6">
+                            <div class="badge">
+                                47% 할인
+                            </div>
+                            <div class="tit">
+                                [필리핀] 50장
+                            </div>
+                            <div class="price">
+                                <span class="cancel">320,000원</span>
+                                <span>총  169,600원</span>
+                            </div>
+                            <div class="total">
+                                <b>169,600원</b> /월
+                            </div>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio6">
+                            <div class="badge">
+                                50% 할인
+                            </div>
+                            <div class="tit">
+                                [필리핀] 60장
+                            </div>
+                            <div class="price">
+                                <span class="cancel">384,000원</span>
+                                <span>총  192,000원</span>
+                            </div>
+                            <div class="total">
+                                <b>192,000원</b> /월
+                            </div>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio6">
+                            <div class="badge">
+                                53% 할인
+                            </div>
+                            <div class="tit">
+                                [필리핀] 70장
+                            </div>
+                            <div class="price">
+                                <span class="cancel">448,000원</span>
+                                <span>총  210,500원</span>
+                            </div>
+                            <div class="total">
+                                <b>210,500원</b> /월
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </section>
+            <section class="sec">
+                <div class="inner" style="max-width: 1080px;">
+                    <h5>
+                        <b>사용 방법 및 유효기간</b>을 확인해 주세요
+                    </h5>
+
+                    <div class="info" style="max-width: 100%;">
+                        <p>하루 수업 쿠폰은 <span>당일 수업 예약만 가능</span>합니다.</p>
+                        <p>하루 수업 쿠폰 <span>1장당 10분 수업</span> 수강이 가능합니다. <span class="enter"></span>(여러 장의 쿠폰을 이용해 10분 이상의 수업도 수강 가능)</p>
+                        <p>하루 수업은 <span>60분 이후 수업부터 예약</span>이 가능합니다.</p>
+                        <p>하루 수업 취소 및 시간 변경은 <span>수업 시작 60분 전까지 가능합니다.</span></p>
+                        <p>하루 수업은 수업시간, 강사의 제한 없는 <span>당일 자유예약 수업</span>입니다.</p>
+                        <p>하루 수업 쿠폰은 구입후 <span>1개월(30일)</span>동안 사용할 수 있습니다. (공휴일 등으로 연장되지 않습니다)</p>
+                        <p>하루 수업으로 예약한 수업은 진행, 예약 특성상 <span>환불이 불가</span>합니다.</p>
+                    </div>
+
+                </div>
+                <div class="inner">
+                    <div class="selectBtn">
+                        <label>
+                            <input type="radio" name="radio7" checked>
+                            <div class="radioBtn" style="flex-direction: row;">네<span class="hidden-mo">, 알겠습니다</span></div>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio7">
+                            <div class="radioBtn">아니오</div>
+                        </label>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
         <div class="inner inner-mo">
             <button class="btn-round btn-gra">결제하기</button>
             <div class="guide">
@@ -311,6 +471,30 @@
             </div>
         </div>
     </div>
+
+    <script>
+        const tab1 = document.querySelector('#tab1')
+        const tab2 = document.querySelector('#tab2')
+        const panel1 = document.querySelectorAll('.panel1')
+        const panel2 = document.querySelectorAll('.panel2')
+
+        tab1.addEventListener('click', () => {
+            panel1.forEach(e => {
+                e.classList.add('ac')
+            })
+            panel2.forEach(e => {
+                e.classList.remove('ac')
+            })
+        })
+        tab2.addEventListener('click', () => {
+            panel1.forEach(e => {
+                e.classList.remove('ac')
+            })
+            panel2.forEach(e => {
+                e.classList.add('ac')
+            })
+        })
+    </script>
 
 
 

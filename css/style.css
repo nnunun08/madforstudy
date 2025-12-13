@@ -3250,9 +3250,16 @@ footer.junior .info {
 }
 .section-24 section {
   padding: 88px 0 109px;
+  background-color: #fff;
 }
 .section-24 section:nth-child(2n) {
   background-color: #F9F9F9;
+}
+.section-24 [class*=panel] {
+  display: none;
+}
+.section-24 [class*=panel].ac {
+  display: block;
 }
 .section-24 .selectBtn {
   display: flex;
@@ -3395,6 +3402,31 @@ footer.junior .info {
   line-height: 144%; /* 46.08px */
   letter-spacing: -0.96px;
 }
+.section-24 .info {
+  color: #000;
+  font-family: "SUIT Variable";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: -0.72px;
+  text-align: left;
+  margin: 60px 0 100px;
+}
+.section-24 .info p {
+  padding-left: 40px;
+  position: relative;
+}
+.section-24 .info p::before {
+  content: "·";
+  position: absolute;
+  top: 0px;
+  left: 15px;
+}
+.section-24 .info span {
+  color: #005BEA;
+  font-weight: 700;
+}
 .section-24 .btn-round {
   width: 100%;
   height: 72px;
@@ -3411,6 +3443,7 @@ footer.junior .info {
   line-height: 128%; /* 30.72px */
   letter-spacing: -0.72px;
   margin-bottom: 24px;
+  margin-top: 80px;
 }
 .section-24 .guide {
   text-align: left;
@@ -3492,6 +3525,16 @@ footer.junior .info {
   .section-24 .selectCard .total b {
     font-size: 5.555vw;
   }
+  .section-24 .info {
+    margin: 16px 0 32px;
+  }
+  .section-24 .info p {
+    font-size: 3.333vw;
+    padding-left: 4%;
+  }
+  .section-24 .info p::before {
+    left: 2%;
+  }
   .section-24 .btn-round {
     font-size: 4.444vw;
     height: 52px;
@@ -3504,6 +3547,9 @@ footer.junior .info {
   }
   .section-24 .inner-mo {
     padding: 0 30px;
+  }
+  .section-24 .hidden-mo {
+    display: none;
   }
 }
 .madforJunior {

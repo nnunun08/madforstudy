@@ -3369,8 +3369,15 @@ footer {
 	}
 	section {
 		padding: 88px 0 109px;
+		background-color: #fff;
 		&:nth-child(2n) {
 			background-color: #F9F9F9;
+		}
+	}
+	[class*="panel"] {
+		display: none;
+		&.ac {
+			display: block;
 		}
 	}
 	.selectBtn {
@@ -3514,6 +3521,32 @@ footer {
 			}
 		}
 	}
+	.info {
+		color: #000;
+		font-family: "SUIT Variable";
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 1.6;
+		letter-spacing: -0.72px;
+		text-align: left;
+		margin: 60px 0 100px;
+		p {
+			padding-left: 40px;
+			position: relative;
+			&::before {
+				content: '·';
+				position: absolute;
+				top: 0px;
+    			left: 15px;
+			}
+		}
+		span {
+			color: #005BEA;
+			font-weight: 700;
+		}
+	}
+
 	.btn-round {
 		width: 100%;
 		height: 72px;
@@ -3530,6 +3563,7 @@ footer {
 		line-height: 128%; /* 30.72px */
 		letter-spacing: -0.72px;
 		margin-bottom: 24px;
+		margin-top: 80px;
 	}
 	.guide {
 		text-align: left;
@@ -3610,6 +3644,16 @@ footer {
 				}
 			}
 		}
+		.info {
+			margin: 16px 0 32px;
+			p {
+				font-size: $fs12;
+				padding-left: 4%;
+				&::before {
+					left: 2%;
+				}
+			}
+		}
 		.btn-round {
 			font-size: $fs16;
 			height: 52px;
@@ -3622,6 +3666,9 @@ footer {
 		}
 		.inner-mo {
 			padding: 0 30px;
+		}
+		.hidden-mo {
+			display: none;
 		}
 	}
 }
