@@ -49,7 +49,10 @@ input {
 	max-width: 1280px;
 	width: 100%;
 	margin: 0 auto;
-	padding: 0 16px;
+	// 1217 update
+	// 모바일 양쪽 패딩 + 8
+	// padding: 0 16px;
+	padding: 0 24px;
 	box-sizing: border-box;
 }
 
@@ -73,16 +76,20 @@ input {
 	}
 	// 1203 update
 	// 모바일 양쪽 패딩 + 2
+	// 1217 update
+	// 모바일 양쪽 패딩 + 4
 	.inner {
-		padding-inline: 20px;
+		// padding-inline: 20px;
 	}
 }
 // 1203 update
 // 모바일 양쪽 패딩 + 2
+// 1217 update
+// 모바일 양쪽 패딩 + 4
 @mixin innerFull {
-	margin-left: -20px;
-	margin-right: -20px;
-	width: calc(100% + 40px);
+	margin-left: -24px;
+	margin-right: -24px;
+	width: calc(100% + 48px);
 }
 
 @keyframes bookTrack {
@@ -328,6 +335,7 @@ p.p2 {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		padding-inline: 16px;
 	}
 	a {
 		color: inherit;
@@ -536,6 +544,8 @@ p.p2 {
 			left: 0;
 			right: 0;
 			margin: 0 auto;
+			width: 50%;
+			aspect-ratio: 440 / 321;
 		}
 		.msg1 {
 			top: 270px;
@@ -3933,7 +3943,8 @@ footer {
 	.tab-panel { 
 		display:none; 
 		margin-top: 64px;
-		height: 1350px;
+		// height: 1350px;
+		height: auto;
 		border-radius: 40px;
 		background: #F9F9F9;
 		padding: 80px 100px;
@@ -4040,11 +4051,12 @@ footer {
 		.tab-panel { 
 			margin-top: 16px;
 			height: auto;
-			min-height: 380px;
-			aspect-ratio: 360 / 380;
+			// min-height: 380px;
+			// aspect-ratio: 360 / 380;
 			padding: 11% 0;
 			border-radius: 0;
-			gap: 2.5%;
+			// gap: 2.5%;
+			gap: 2vw;
 			box-sizing: border-box;
 			align-items: center;
 			@include innerFull();
