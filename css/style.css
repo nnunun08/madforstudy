@@ -753,6 +753,7 @@ p.p2 {
   margin: 48px auto 72px;
 }
 .section-03 .rolling {
+  transform: scale(0.8);
   width: 100%;
   margin: 0 auto;
   margin-top: -20px;
@@ -1005,6 +1006,7 @@ p.p2 {
   aspect-ratio: 1608/1105;
   margin-top: 80px;
   margin-bottom: 120px;
+  overflow: visible;
 }
 .section-06 .imgWrap img {
   position: absolute;
@@ -1012,6 +1014,15 @@ p.p2 {
   left: 50%;
   transform: translateX(-50%);
   width: 113%;
+}
+.section-06 .slick2 {
+  margin-left: -24px;
+  margin-right: -24px;
+  width: calc(100% + 48px);
+}
+.section-06 .slick2 .slick-list {
+  padding-top: 20%;
+  margin-top: -20%;
 }
 
 .section-07 {
@@ -2298,6 +2309,9 @@ footer.junior .info {
     margin-bottom: 24px;
     font-weight: 400;
   }
+  .paraTemple h3 {
+    font-size: 6.2vw;
+  }
   .paraTemple h5 {
     font-size: 3.611vw;
     margin-bottom: 24px;
@@ -2547,7 +2561,7 @@ footer.junior .info {
     bottom: -3%;
   }
   .section-03 {
-    padding: 72px 0 70px;
+    padding: 72px 0 40px;
   }
   .section-03 h3 {
     font-size: 6.667vw;
@@ -2750,7 +2764,7 @@ footer.junior .info {
     z-index: 1;
   }
   .section-08 .slickSec08 {
-    width: calc(100vw - 32px);
+    width: calc(100vw - 105px);
     margin-bottom: 70px;
     margin-bottom: 21.4%;
   }

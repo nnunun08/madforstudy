@@ -802,6 +802,7 @@ p.p2 {
 		margin: 48px auto 72px;
 	}
 	.rolling {
+		transform: scale(0.8);
 		width: 100%;
 		margin: 0 auto;
 		margin-top: -20px;
@@ -1090,12 +1091,22 @@ p.p2 {
 		aspect-ratio: 1608 / 1105;
 		margin-top: 80px;
 		margin-bottom: 120px;
+		overflow: visible;
 		img {
 			position: absolute;
 			bottom: 0;
 			left: 50%;
 			transform: translateX(-50%);
 			width: 113%;
+		}
+	}
+	.slick2 {
+		margin-left: -24px;
+		margin-right: -24px;
+		width: calc(100% + 48px);
+		.slick-list {
+			padding-top: 20%;
+			margin-top: -20%;
 		}
 	}
 }
@@ -2390,6 +2401,9 @@ footer {
 			margin-bottom: 24px;
 			font-weight: 400;
 		}
+		h3 {
+			font-size: 6.2vw;
+		}
 		h5 {
 			font-size: $fs13;
 			margin-bottom: 24px;
@@ -2670,7 +2684,7 @@ footer {
 		}
 	}
 	.section-03 {
-		padding: 72px 0 70px;
+		padding: 72px 0 40px;
 		h3 {
 			em {
 				font-size: $fs16;
@@ -2880,7 +2894,7 @@ footer {
 			z-index: 1;
 		}
 		.slickSec08 {
-			width: calc(100vw - 32px);
+			width: calc(100vw - 105px);
 			margin-bottom: 70px;
 			margin-bottom: 21.4%;
 			.slick-dots {

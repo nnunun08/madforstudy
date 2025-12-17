@@ -140,7 +140,7 @@
             <img class="obj pic1" src="./img/img_hero_pic1.svg" alt="obj" data-aos="zoom-in" data-aos-duration="500" data-aos-offset="300" data-aos-delay="200"  data-aos-easing="ease-in-out">
             <img class="obj pic2" src="./img/img_hero_pic2.svg" alt="obj" data-aos="zoom-in" data-aos-duration="500" data-aos-offset="0" data-aos-delay="500"  data-aos-easing="ease-in-out">
             <img class="obj pic3" src="./img/img_hero_pic3.svg" alt="obj" data-aos="zoom-in" data-aos-duration="500" data-aos-offset="500" data-aos-delay="500"  data-aos-easing="ease-in-out">
-            <img class="obj pic4" src="./img/img_hero_pic4.svg" alt="obj" data-aos="zoom-in" data-aos-duration="500" data-aos-offset="300" data-aos-delay="1000"  data-aos-easing="ease-in-out">
+            <img class="obj pic4" src="./img/img_hero_pic4.png" alt="obj" data-aos="zoom-in" data-aos-duration="500" data-aos-offset="300" data-aos-delay="1000"  data-aos-easing="ease-in-out">
         </div>
         <!-- <img class="d-mo bg" src="./img/bg_hero_mo.png" alt="herobg" data-aos="fade-up" data-aos-duration="500" data-aos-offset="300"> -->
         <div class="black d-pc">
@@ -448,9 +448,20 @@
                     TESOL 자격 강사는 다릅니다
                 </h5>
             </div>
-            <div class="imgWrap">
-                <div class="d-pc"><img src="./img/img_section06.png" srcset="./img/img_section06.png 2x" alt="table"></div>
-                <div class="d-mo"><img src="./img/img_section06_mo.png" srcset="./img/img_section06_mo.png 2x" alt="table"></div>
+            <div class="d-pc">
+                <div class="imgWrap">
+                    <img src="./img/img_section06.png" srcset="./img/img_section06.png 2x" alt="table">
+                </div>
+            </div>
+            <div class="d-mo">
+                <div class="slick2">
+                    <div class="imgWrap">
+                        <img src="./img/img_section06_mo.png" srcset="./img/img_section06_mo.png 2x" alt="table">
+                    </div>
+                    <div class="imgWrap">
+                        <img src="./img/img_section06_2_mo.png" srcset="./img/img_section06_2_mo.png 2x" alt="table">
+                    </div>
+                </div>
             </div>
             <div class="btnWrap">
                 <a class="btn-round btn-gra" href="#">무료 레벨 테스트 바로가기</a>
@@ -484,7 +495,7 @@
                     <h3>
                         단순 문법 공부를 넘어<br/>
                         <b>
-                            실제 원어민 처럼 말하고 이해하는 영어
+                            실제 원어민처럼 말하고 이해하는 영어
                         </b>
                     </h3>
                     <h5>
@@ -673,6 +684,15 @@
                     }
                 }
             ]
+        });
+
+        $('.section-06 .slick2').slick({
+            dots: true,
+            arrows: false,
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            slidesToShow: 1,
         });
 
         $('.slickSec08').slick({
