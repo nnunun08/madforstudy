@@ -45,14 +45,18 @@ input {
 	display: -webkit-box;
 }
 
+$sidePadding : 42px;
+
 .inner {
 	max-width: 1280px;
+	// max-width: 1024px;
 	width: 100%;
 	margin: 0 auto;
 	// 1217 update
 	// 모바일 양쪽 패딩 + 8
 	// padding: 0 16px;
-	padding: 0 24px;
+	// padding: 0 24px;
+	padding: 0 $sidePadding;
 	box-sizing: border-box;
 }
 
@@ -79,7 +83,7 @@ input {
 	// 1217 update
 	// 모바일 양쪽 패딩 + 4
 	.inner {
-		// padding-inline: 20px;
+		padding-inline: 24px;
 	}
 }
 // 1203 update
@@ -87,9 +91,11 @@ input {
 // 1217 update
 // 모바일 양쪽 패딩 + 4
 @mixin innerFull {
-	margin-left: -24px;
-	margin-right: -24px;
-	width: calc(100% + 48px);
+	// margin-left: -24px;
+	// margin-right: -24px;
+	margin-left: - $sidePadding;
+	margin-right: - $sidePadding;
+	width: calc(100% + $sidePadding * 2);
 }
 
 @keyframes bookTrack {
@@ -590,6 +596,7 @@ p.p2 {
 	padding: 160px 0 0;
 	text-align: center;
 	.score {
+		overflow: hidden;
 		position: relative;
 		padding: 234px 0 300px;
 		text-align: left;
