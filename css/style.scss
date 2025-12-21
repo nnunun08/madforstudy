@@ -96,6 +96,11 @@ $sidePadding : 42px;
 	margin-left: - $sidePadding;
 	margin-right: - $sidePadding;
 	width: calc(100% + $sidePadding * 2);
+	@media screen and (max-width:1024px) {
+		margin-left: - 24px;
+		margin-right: - 24px;
+		width: calc(100% + 24px * 2);
+	}
 }
 
 @keyframes bookTrack {
@@ -1028,7 +1033,8 @@ p.p2 {
 		h4 {
 			color: #FFF;
 			font-family: "SUIT Variable";
-			font-size: 48px;
+			// font-size: 48px;
+			font-size: 40px;
 			font-style: normal;
 			font-weight: 800;
 			line-height: 144%; /* 69.12px */
@@ -1038,12 +1044,13 @@ p.p2 {
 		.p1 {
 			color: #FFF;
 			font-family: "SUIT Variable";
-			font-size: 24px;
+			// font-size: 24px;
+			font-size: 20px;
 			font-style: normal;
 			font-weight: 500;
 			line-height: 128%; /* 30.72px */
 			letter-spacing: -0.72px;
-			margin-block: 16px 40px;
+			margin-block: 36px 52px;
 			text-align: left;
 		}
 		.imgWrap {
@@ -1340,13 +1347,16 @@ p.p2 {
 	text-align: center;
 	padding-block: 160px 133px;
 	background-color: #111111;
+	.inner {
+		max-width: 900px;
+	}
 	h1 {
 		color: #fff;
 	}
 	.reviewWrap {
 		position: relative;
 		width: 100%;
-		aspect-ratio: 1440 / 1000;
+		aspect-ratio: 900 / 1086;
 		overflow: hidden;
 		margin-top: 80px;
 		.reviewDim {
@@ -1472,10 +1482,22 @@ footer {
 		display: none !important;
 	}
 }
-
 .section-12 {
 	text-align: center;
 	padding: 160px 0;
+	@media screen and (min-width:1023px) {
+		&.section-12-smalFont {
+			h1 {
+				font-size: 56px;
+				margin-top: 16px;
+				margin-bottom: 35px;
+			}
+			h5 {
+				font-size: 24px;
+				margin-bottom: 96px;
+			}
+		}
+	}
 	.inner {
 		max-width: 1127px;
 	}
@@ -2292,7 +2314,8 @@ footer {
 		overflow: hidden;
 		.item {
 			animation: imgSlide 80s linear infinite;
-			height: 420px;
+			// height: 420px;
+			height: 350px;
 		}
 		@keyframes imgSlide {
 			from {
@@ -2307,9 +2330,10 @@ footer {
 	.systemImg {
 		display: flex;
 		flex-direction: column;
-		gap: 40px;
+		gap: 32px;
 		width: 100%;
-		max-width: 1080px;
+		// max-width: 1080px;
+		max-width: 880px;
 		margin: 0 auto;
 		margin-top: 80px;
 		img {

@@ -941,7 +941,7 @@ p.p2 {
 .section-05 .item h4 {
   color: #FFF;
   font-family: "SUIT Variable";
-  font-size: 48px;
+  font-size: 40px;
   font-style: normal;
   font-weight: 800;
   line-height: 144%; /* 69.12px */
@@ -951,12 +951,12 @@ p.p2 {
 .section-05 .item .p1 {
   color: #FFF;
   font-family: "SUIT Variable";
-  font-size: 24px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 128%; /* 30.72px */
   letter-spacing: -0.72px;
-  margin-block: 16px 40px;
+  margin-block: 36px 52px;
   text-align: left;
 }
 .section-05 .item .imgWrap {
@@ -1244,13 +1244,16 @@ p.p2 {
   padding-block: 160px 133px;
   background-color: #111111;
 }
+.section-11 .inner {
+  max-width: 900px;
+}
 .section-11 h1 {
   color: #fff;
 }
 .section-11 .reviewWrap {
   position: relative;
   width: 100%;
-  aspect-ratio: 1440/1000;
+  aspect-ratio: 900/1086;
   overflow: hidden;
   margin-top: 80px;
 }
@@ -1377,6 +1380,17 @@ footer.junior .info {
   text-align: center;
   padding: 160px 0;
 }
+@media screen and (min-width: 1023px) {
+  .section-12.section-12-smalFont h1 {
+    font-size: 56px;
+    margin-top: 16px;
+    margin-bottom: 35px;
+  }
+  .section-12.section-12-smalFont h5 {
+    font-size: 24px;
+    margin-bottom: 96px;
+  }
+}
 .section-12 .inner {
   max-width: 1127px;
 }
@@ -1426,6 +1440,13 @@ footer.junior .info {
   margin-right: -42px;
   width: calc(100% + 84px);
   margin-block: 80px 120px;
+}
+@media screen and (max-width: 1024px) {
+  .section-12 .trackWrap {
+    margin-left: -24px;
+    margin-right: -24px;
+    width: calc(100% + 48px);
+  }
 }
 .section-12 .trackWrap .track {
   display: flex;
@@ -1756,6 +1777,15 @@ footer.junior .info {
     margin-right: -42px;
     width: calc(100% + 84px);
   }
+}
+@media screen and (max-width: 1024px) and (max-width: 1024px) {
+  .section-12.bgGrey img {
+    margin-left: -24px;
+    margin-right: -24px;
+    width: calc(100% + 48px);
+  }
+}
+@media screen and (max-width: 1024px) {
   .section-12 h1 {
     font-size: 6.667vw;
   }
@@ -1791,6 +1821,15 @@ footer.junior .info {
     margin-top: -28%;
     margin-bottom: 32px;
   }
+}
+@media screen and (max-width: 1024px) and (max-width: 1024px) {
+  .section-12 .bgWhite {
+    margin-left: -24px;
+    margin-right: -24px;
+    width: calc(100% + 48px);
+  }
+}
+@media screen and (max-width: 1024px) {
   .section-12 .bgWhite h5 {
     margin: 0;
   }
@@ -1995,6 +2034,15 @@ footer.junior .info {
     margin-right: -42px;
     width: calc(100% + 84px);
   }
+}
+@media screen and (max-width: 1024px) and (max-width: 1024px) {
+  .section-13 img {
+    margin-left: -24px;
+    margin-right: -24px;
+    width: calc(100% + 48px);
+  }
+}
+@media screen and (max-width: 1024px) {
   .section-13 .subTit {
     font-size: 5vw;
   }
@@ -2042,6 +2090,15 @@ footer.junior .info {
     margin-right: -42px;
     width: calc(100% + 84px);
   }
+}
+@media screen and (max-width: 1024px) and (max-width: 1024px) {
+  .section-14 img {
+    margin-left: -24px;
+    margin-right: -24px;
+    width: calc(100% + 48px);
+  }
+}
+@media screen and (max-width: 1024px) {
   .section-14 .btnWrap {
     margin-top: 40px;
   }
@@ -2202,6 +2259,13 @@ footer.junior .info {
   margin-right: -42px;
   width: calc(100% + 84px);
 }
+@media screen and (max-width: 1024px) {
+  .section-16 .trackWrap {
+    margin-left: -24px;
+    margin-right: -24px;
+    width: calc(100% + 48px);
+  }
+}
 .section-16 .trackWrap2 {
   margin: 120px 0;
 }
@@ -2214,7 +2278,7 @@ footer.junior .info {
 }
 .section-16 .track .item {
   animation: imgSlide 80s linear infinite;
-  height: 420px;
+  height: 350px;
 }
 @keyframes imgSlide {
   from {
@@ -2227,9 +2291,9 @@ footer.junior .info {
 .section-16 .systemImg {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 32px;
   width: 100%;
-  max-width: 1080px;
+  max-width: 880px;
   margin: 0 auto;
   margin-top: 80px;
 }
@@ -2653,6 +2717,15 @@ footer.junior .info {
     margin-right: -42px;
     width: calc(100% + 84px);
   }
+}
+@media screen and (max-width: 1024px) and (max-width: 1024px) {
+  .section-05 .slick {
+    margin-left: -24px;
+    margin-right: -24px;
+    width: calc(100% + 48px);
+  }
+}
+@media screen and (max-width: 1024px) {
   .section-05 .card {
     padding: 0 20px;
   }
@@ -2798,6 +2871,15 @@ footer.junior .info {
     margin-right: -42px;
     width: calc(100% + 84px);
   }
+}
+@media screen and (max-width: 1024px) and (max-width: 1024px) {
+  .section-09 .bookWrap {
+    margin-left: -24px;
+    margin-right: -24px;
+    width: calc(100% + 48px);
+  }
+}
+@media screen and (max-width: 1024px) {
   .section-09 .bookWrap .book {
     height: 124px;
     height: 34.5vw;
@@ -2831,6 +2913,15 @@ footer.junior .info {
     margin-right: -42px;
     width: calc(100% + 84px);
   }
+}
+@media screen and (max-width: 1024px) and (max-width: 1024px) {
+  .section-11 .reviewWrap {
+    margin-left: -24px;
+    margin-right: -24px;
+    width: calc(100% + 48px);
+  }
+}
+@media screen and (max-width: 1024px) {
   .section-11 .reviewWrap img {
     width: 90%;
   }
@@ -3689,6 +3780,15 @@ footer.junior .info {
     margin-right: -42px;
     width: calc(100% + 84px);
   }
+}
+@media screen and (max-width: 1024px) and (max-width: 1024px) {
+  .madforJunior .whochoose .inner {
+    margin-left: -24px;
+    margin-right: -24px;
+    width: calc(100% + 48px);
+  }
+}
+@media screen and (max-width: 1024px) {
   .madforJunior .whochoose img {
     margin-left: -4%;
   }
@@ -3737,6 +3837,13 @@ footer.junior .info {
     margin-left: -10%;
     margin-right: -10%;
     width: 120%;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 1024px) {
+  .madforJunior .bandContents img {
+    margin-left: -24px;
+    margin-right: -24px;
+    width: calc(100% + 48px);
   }
 }
 .madforJunior .madforJunior-cta {
@@ -3938,6 +4045,15 @@ footer.junior .info {
     gap: 2.5%;
     overflow: auto;
   }
+}
+@media screen and (max-width: 1024px) and (max-width: 1024px) {
+  .section-25 .tab-list {
+    margin-left: -24px;
+    margin-right: -24px;
+    width: calc(100% + 48px);
+  }
+}
+@media screen and (max-width: 1024px) {
   .section-25 .tab-list::after, .section-25 .tab-list::before {
     content: "";
     padding-left: 16px;
@@ -3971,6 +4087,15 @@ footer.junior .info {
     margin-right: -42px;
     width: calc(100% + 84px);
   }
+}
+@media screen and (max-width: 1024px) and (max-width: 1024px) {
+  .section-25 .tab-panel {
+    margin-left: -24px;
+    margin-right: -24px;
+    width: calc(100% + 48px);
+  }
+}
+@media screen and (max-width: 1024px) {
   .section-25 .tab-panel .item {
     width: 70%;
     border-radius: 1%;
