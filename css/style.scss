@@ -48,8 +48,9 @@ input {
 $sidePadding : 42px;
 
 .inner {
-	max-width: 1280px;
+	// max-width: 1280px;
 	// max-width: 1024px;
+	max-width: 998px;
 	width: 100%;
 	margin: 0 auto;
 	// 1217 update
@@ -59,6 +60,11 @@ $sidePadding : 42px;
 	padding: 0 $sidePadding;
 	box-sizing: border-box;
 }
+
+// [class*="-hero"] .inner {
+// 	max-width: 1076px;
+// 	padding-inline: 20px;
+// }
 
 .d-pc {
 	display: block !important;
@@ -152,7 +158,7 @@ $fs10: 2.778vw; /* 10px */
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 40px;
+	gap: 32px;
 	margin-top: 80px;
 }
 
@@ -161,10 +167,12 @@ $fs10: 2.778vw; /* 10px */
 h1 {
 	color: #000;
 	font-family: "SUIT Variable";
-	font-size: 64px;
+	// font-size: 64px;
+	font-size: 48px;
 	font-style: normal;
 	font-weight: 800;
-	line-height: 144%; /* 92.16px */
+	// line-height: 144%; 
+	line-height: 120%; /* 57.6px */
 	letter-spacing: -1.92px;
 	word-break: keep-all;
 }
@@ -172,10 +180,11 @@ h1 {
 h2 {
 	color: #000;
 	font-family: "SUIT Variable";
-	font-size: 64px;
+	// font-size: 64px;
+	font-size: 56px;
 	font-style: normal;
 	font-weight: 700;
-	line-height: 144%; /* 92.16px */
+	line-height: 150%;
 	letter-spacing: -1.92px;
 	word-break: keep-all;
 }
@@ -183,7 +192,8 @@ h2 {
 h3 {
 	color: #000;
 	font-family: "SUIT Variable";
-	font-size: 56px;
+	// font-size: 56px;
+	font-size: 48px;
 	font-style: normal;
 	font-weight: 700;
 	line-height: 144%; /* 80.64px */
@@ -205,7 +215,8 @@ h4 {
 h5 {
 	color: #000;
 	font-family: "SUIT Variable";
-	font-size: 32px;
+	// font-size: 32px;
+	font-size: 24px;
 	font-style: normal;
 	font-weight: 700;
 	line-height: 144%; /* 46.08px */
@@ -216,10 +227,11 @@ h5 {
 p.p1 {
 	color: #000;
 	font-family: "SUIT Variable";
-	font-size: 24px;
+	// font-size: 24px;
+	font-size: 20px;
 	font-style: normal;
 	font-weight: 500;
-	line-height: 144%; /* 34.56px */
+	line-height: 144%;
 	letter-spacing: -0.72px;
 	word-break: keep-all;
 }
@@ -272,13 +284,15 @@ p.p2 {
 
 .btn-round {
 	border-radius: 90px;
-	padding: 16px 32px;
+	// padding: 16px 32px;
+	padding: 12.5px 30.5px;
 	display: inline-flex;
 	&.btn-gra {
 		background: linear-gradient(90deg, #3B82F6 0%, #005BEA 100%);
 		color: #FFF;
 		font-family: "SUIT Variable";
-		font-size: 24px;
+		// font-size: 24px;
+		font-size: 18px;
 		font-style: normal;
 		font-weight: 700;
 		line-height: 128%; /* 30.72px */
@@ -288,7 +302,8 @@ p.p2 {
 		border: 2px solid #EEE;
 		color: #EEE;
 		font-family: "SUIT Variable";
-		font-size: 24px;
+		// font-size: 24px;
+		font-size: 18px;
 		font-style: normal;
 		font-weight: 700;
 		line-height: 128%; /* 30.72px */
@@ -298,7 +313,8 @@ p.p2 {
 		border: 2px solid #FFF;
 		color: #FFF;
 		font-family: "SUIT Variable";
-		font-size: 24px;
+		// font-size: 24px;
+		font-size: 18px;
 		font-style: normal;
 		font-weight: 700;
 		line-height: 128%; /* 30.72px */
@@ -308,7 +324,8 @@ p.p2 {
 		border: 2px solid #3B82F6;
 		color: #3B82F6;
 		font-family: "SUIT Variable";
-		font-size: 24px;
+		// font-size: 24px;
+		font-size: 18px;
 		font-style: normal;
 		font-weight: 700;
 		line-height: 128%; /* 30.72px */
@@ -336,7 +353,7 @@ p.p2 {
 }
 .gnb {
 	z-index: 2;
-	padding: 40px 0 35px;
+	padding: 56px 0 19px;
 	background-color: #fff;
 	position: fixed;
 	top: 0;
@@ -347,6 +364,7 @@ p.p2 {
 		justify-content: space-between;
 		align-items: center;
 		padding-inline: 16px;
+		max-width: 1280px;
 	}
 	a {
 		color: inherit;
@@ -491,19 +509,26 @@ p.p2 {
 
 .hero {
 	text-align: center;
-	padding-top: 120px;
+	// padding-top: 120px;
+	padding-top: 80px;
+	.ic {
+		max-width: 200px;
+	}
 	h1 {
-		margin-top: 64px;
+		// margin-top: 64px;
+		margin-top: 40px;
 	}
 	h5 {
-		margin-top: 24px;
+		// margin-top: 24px;
+		margin-top: 16px;
 		color: #005EBA;
 		text-align: center;
 		font-family: "SUIT Variable";
-		font-size: 32px;
+		// font-size: 32px;
+		font-size: 26px;
 		font-style: normal;
 		font-weight: 700;
-		line-height: 120%; /* 38.4px */
+		line-height: 144%;
 		letter-spacing: -0.96px;
 	}
 	.bg {
@@ -512,104 +537,138 @@ p.p2 {
 		width: 100%;
 		// width: 1440px;
 		margin: 0 auto;
-		margin-top: -150px;
+		// margin-top: -150px;
 	}
 	.black {
 		background-color: #333;
 		z-index: -1;
 		.inner {
 			text-align: left;
-			max-width: 1012px;
+			// max-width: 1012px;
+			max-width: 890px;
 			position: relative;
-			padding-block: 56px 43px;
+			// padding-block: 56px 43px;
+			padding: 38px 5px 38px 45px;
 		}
 		h5 {
 			color: #fff;
 			text-align: left;
 			margin: 0;
-			margin-bottom: 24px;
+			margin-bottom: 12px;
 			line-height: 144%; /* 46.08px */
 		}
 		.p1 {
 			color: #fff;
 			text-align: left;
-			margin-bottom: 32px;
-			line-height: 120%; /* 28.8px */
+			margin-bottom: 24px;
+			line-height: 120%;
 		}
 		img {
 			position: absolute;
 			bottom: 0;
 			right: 0;
+			max-width: 300px;
 		}
 	}
 	.animation {
 		background: url(../img/bg_hero_pc.png) center/cover no-repeat;
-		height: 750px;
+		// background: url(../img/bg_hero_pc_screen.png) center/contain no-repeat;
+		// height: 750px;
+		height: 472px;
 		position: relative;
 		overflow: hidden;
 		.obj {
 			position: absolute;
 		}
 		.phone {
-			bottom: -74px;
+			// bottom: -74px;
+			bottom: -58px;
 			left: 0;
 			right: 0;
 			margin: 0 auto;
-			width: 50%;
+			// width: 38.2%;
+			width: 520px;
 			aspect-ratio: 440 / 321;
+			transform: translateX(-14px);
 		}
 		.msg1 {
-			top: 270px;
+			// top: 270px;
 			// left: 31%;
-			left: 50%;
-			margin-left: -278px;
+			// left: 50%;
+			// margin-left: -278px;
+			top: 82px;
+			left: 50.4%;
+			margin-left: -268px;
+			transform: scale(0.8);
 		}
 		.msg2 {
-			bottom: 45px;
+			// bottom: 45px;
 			// right: 11%;
+			// right: 50%;
+			// margin-right: -561px;
+			bottom: 23px;
 			right: 50%;
-			margin-right: -561px;
+			margin-right: -467px;
+			transform: scale(0.8);
 		}
 		.pic1 {
-			top: 45%;
+			// top: 45%;
 			// left: 19.7%;
-			left: 50%;
+			// left: 50%;
+			// margin-left: -436px;
+			top: 29.6%;
+			left: 54.6%;
 			margin-left: -436px;
+			transform: scale(0.8);
 		}
 		.pic2 {
-			bottom: 117px;
+			// bottom: 117px;
 			// left: 13%;
-			left: 50%;
-			margin-left: -525px;
+			// left: 50%;
+			// margin-left: -525px;
+			bottom: 80px;
+			left: 51.2%;
+			margin-left: -463px;
+			transform: scale(0.8);
 		}
 		.pic3 {
-			top: 38%;
-			// right: 29%;
-			right: 50%;
+			// top: 38%;
+			// right: 50%;
+			top: 22.8%;
+			right: 55%;
 			margin-right: -302px;
+			max-width: 104px;
 		}
 		.pic4 {
-			top: 50%;
+			// top: 50%;
 			// right: 13.8%;
-			right: 50%;
+			// right: 50%;
+			// margin-right: -510px;
+			top: 38%;
+			right: 56.8%;
 			margin-right: -510px;
+			max-width: 116px;
 		}
 	}
 }
 
 .section-02 {
-	padding: 160px 0 0;
+	padding: 128px 0 0;
 	text-align: center;
+	.inner {
+		max-width: 1000px;
+	}
 	.score {
 		overflow: hidden;
 		position: relative;
-		padding: 234px 0 300px;
+		// padding: 234px 0 300px;
+		padding: 195px 0 202px;
 		text-align: left;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		.left {
-			padding-left: 40px;
+			// padding-left: 40px;
 		}
 		h3 {
 			.color1 {
@@ -618,12 +677,12 @@ p.p2 {
 			.color2 {
 				color:#005BEA;
 			}
-			margin-bottom: 40px;
+			margin-bottom: 20px;
 		}
 		h5 {
 			color: #111;
 			font-family: "SUIT Variable";
-			font-size: 32px;
+			font-size: 24px;
 			font-style: normal;
 			font-weight: 500;
 			line-height: 144%; /* 46.08px */
@@ -632,7 +691,7 @@ p.p2 {
 		.imgWrap {
 			margin-right: -96px;
 			aspect-ratio: 825 / 560;
-			max-width: 825px;
+			max-width: 660px;
 			width: 100%;
 			position: absolute;
 			top: 50%;
@@ -652,23 +711,24 @@ p.p2 {
 				transform: translateX(-50%);
 				color: #FFF;
 				font-family: "SUIT Variable";
-				font-size: 36px;
+				// font-size: 36px;
+				font-size: 28px;
 				font-style: normal;
 				font-weight: 700;
 				line-height: 128%; /* 46.08px */
 				letter-spacing: -1.08px;
-				padding: 24px 64px;
+				padding: 18px 50px;
 				white-space: nowrap;
 			}
 		}
 	}
 	.rank {
-		max-width: 637px;
+		max-width: 510px;
 		margin: 0 auto;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		padding-bottom: 13px;
+		padding-bottom: 8px;
 		border-bottom: 1px solid rgba(81, 81, 81, 0.50);
 		.item {
 			flex: 0 0 auto;
@@ -677,22 +737,24 @@ p.p2 {
 				display: block;
 				color: #000;
 				font-family: "Pretendard Variable";
-				font-size: 24px;
+				// font-size: 24px;
+				font-size: 20px;
 				font-style: normal;
 				font-weight: 500;
-				line-height: 128%; /* 30.72px */
+				line-height: 128%;
 				letter-spacing: 0.72px;
 			}
 			strong {
 				display: block;
 				color: #00A6FF;
 				font-family: "Pretendard Variable";
-				font-size: 48px;
+				// font-size: 48px;
+				font-size: 40px;
 				font-style: normal;
 				font-weight: 700;
-				line-height: 128%; /* 61.44px */
-				letter-spacing: 1.44px;
-				margin-top: 6px;
+				line-height: 128%;
+				letter-spacing: 1.2px;
+				margin-top: 3px;
 			}
 		}
 	}
@@ -776,10 +838,10 @@ p.p2 {
 		letter-spacing: -0.96px;
 	}
 	h2 {
-		margin-block: 9px 16px;
+		margin-block: 9px 5px;
 	}
 	.para {
-		margin-block: 70px 48px;
+		margin-block: 51px 44px;
 		span {
 			margin-top: 70px;
 			color: #000;
@@ -798,11 +860,12 @@ p.p2 {
 	overflow: hidden;
 	text-align: center;
 	background-color: #FAFAFA;
-	padding: 144px 0 130px;
+	padding: 140px 0 100px;
 	.inner {
 		max-width: 1120px;
 	}
 	h3 {
+		font-size: 44px;
 		span {
 			color: #005BEA;
 			font-weight: 800;
@@ -811,7 +874,7 @@ p.p2 {
 	.percent {
 		width: 100%;
 		max-width: 894px;
-		margin: 48px auto 72px;
+		margin: 48px auto 35px;
 	}
 	.rolling {
 		transform: scale(0.8);
@@ -880,36 +943,37 @@ p.p2 {
 .section-04 {
 	overflow: hidden;
 	background: #111;
-	padding: 160px 0 140px;
+	padding: 140px 0 140px;
 	text-align: center;
 	.inner {
-		background: url(../img/bg_section04.png) center/100% no-repeat;
+		background: url(../img/bg_section04.png) center/80% no-repeat;
 	}
 	h5 {
 		color: #FFF;
 		font-family: "SUIT Variable";
-		font-size: 32px;
+		// font-size: 32px;
+		font-size: 24px;
 		font-style: normal;
 		font-weight: 500;
 		line-height: 120%; /* 38.4px */
 		letter-spacing: -0.96px;
-		margin-bottom: 32px;
+		margin-bottom: 20px;
 	}
 	h2 {
 		color: #FFF;
 		font-family: "SUIT Variable";
-		font-size: 72px;
+		font-size: 56px;
 		font-style: normal;
 		font-weight: 700;
 		line-height: 144%;
-		letter-spacing: -2.16px;
+		letter-spacing: -1.68px;
 		.color {
 			color: #00E5FF;
 			font-weight: 800;
 		}
 	}
 	.imgWrap {
-		max-width: 1111px;
+		max-width: 976px;
 		aspect-ratio: 1111 / 965;
 		margin: 0 auto;
 		margin-top: -65px;
@@ -925,18 +989,18 @@ p.p2 {
 		color: #FFF;
 		text-align: center;
 		font-family: "SUIT Variable";
-		font-size: 24px;
+		font-size: 20px;
 		font-style: normal;
 		font-weight: 500;
 		line-height: 144%; /* 34.56px */
 		letter-spacing: -0.72px;
 		span {
 			font-weight: 700;
-			padding: 0 15px;
+			padding: 0 8px;
 			border-radius: 99px;
 			border: 1px solid #fff;
 			display: inline-block;
-			margin-inline: 5px;
+			margin-inline: 3px;
 		}
 	}
 	.btnWrap {
@@ -944,36 +1008,44 @@ p.p2 {
 		align-items: center;
 		justify-content: center;
 		margin: 0 auto;
-		margin-top: 80px;
-		gap: 40px;
+		margin-top: 50px;
+		gap: 32px;
 	}
 }
 
 .section-05 {
-	padding: 200px 0 192px;
+	padding: 120px 0;
 	text-align: center;
 	overflow: hidden;
+	.btn-round {
+		font-size: 20px;
+	}
 	.inner {
-		max-width: 1206px;
+		// max-width: 1206px;
+		max-width: 1014px;
 	}
 	.badge {
 		color: #FFF;
 		text-align: center;
 		font-family: "SUIT Variable";
-		font-size: 40px;
+		// font-size: 40px;
+		font-size: 20px;
 		font-style: normal;
 		font-weight: 800;
-		line-height: 150%; /* 60px */
+		// line-height: 150%;
+		line-height: 40px;
 		letter-spacing: -1.2px;
 		border-radius: 90px;
 		background: linear-gradient(90deg, #00E5FF 0%, #1A6AFF 100%);
-		width: 280px;
-		height: 64px;
+		width: 160px;
+		height: 40px;
 		margin: 0 auto;
-		margin-bottom: 40px;
+		margin-bottom: 24px;
 	}
 	h1 {
-		margin-bottom: 24px;
+		font-size: 44px;
+		line-height: 144%;
+		margin-bottom: 22px;
 		span {
 			color: #005BEA;
 		}
@@ -982,25 +1054,25 @@ p.p2 {
 		color: #000;
 		text-align: center;
 		font-family: "SUIT Variable";
-		font-size: 32px;
+		font-size: 20px;
 		font-style: normal;
 		font-weight: 500;
 		line-height: 144%; /* 46.08px */
 		letter-spacing: -0.96px;
-		margin-bottom: 80px;
+		margin-bottom: 60px;
 	}
 	.slick {
-		margin-bottom: 176px;
+		margin-bottom: 120px;
 	}
 	.slick-list,
 	.slick {
 		overflow: visible;
 	}
 	.slick-dots {
-		bottom: -60px;
+		bottom: -50px;
 	}
 	.slick-dots li {
-		margin: 0 12px;
+		margin: 0 8px;
 		button {
 			display: flex;
 			align-items: center;
@@ -1010,14 +1082,14 @@ p.p2 {
 		button:before {
 			content: '';
 			position: static;
-			width: 16px;
-			height: 16px;
+			width: 12px;
+			height: 12px;
 			border-radius: 99px;
 			background: #111;
 		}
 	}
 	.card {
-		padding: 0 32px;
+		padding: 0 25px;
 	}
 	.item {
 		border-radius: 40px;
@@ -1027,14 +1099,17 @@ p.p2 {
 		align-items: center;
 		justify-content: space-between;
 		gap: 40px;
-		padding: 60px 62px 60px 72px;
+		// padding: 60px 62px 60px 72px;
+		padding: 48px;
+		padding-left: 72px;
 		box-sizing: border-box;
 		word-break: keep-all;
 		h4 {
 			color: #FFF;
 			font-family: "SUIT Variable";
 			// font-size: 48px;
-			font-size: 40px;
+			// font-size: 40px;
+			font-size: 32px;
 			font-style: normal;
 			font-weight: 800;
 			line-height: 144%; /* 69.12px */
@@ -1045,17 +1120,22 @@ p.p2 {
 			color: #FFF;
 			font-family: "SUIT Variable";
 			// font-size: 24px;
-			font-size: 20px;
+			font-size: 16px;
 			font-style: normal;
 			font-weight: 500;
 			line-height: 128%; /* 30.72px */
 			letter-spacing: -0.72px;
-			margin-block: 36px 52px;
+			margin-block: 28px 44px;
 			text-align: left;
 		}
+		// .btn-round.btn-gra {
+		// 	font-size: 20px;
+		// }
 		.imgWrap {
-			aspect-ratio: 480 / 400;
-			max-width: 480px;
+			// aspect-ratio: 480 / 400;
+			aspect-ratio: 384 / 320;
+			// max-width: 480px;
+			max-width: 384px;
 			img {
 				width: 100%;
 				height: 100%;
@@ -1071,12 +1151,12 @@ p.p2 {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		gap: 40px;
+		gap: 32px;
 	}
 }
 
 .section-06 {
-	padding: 200px 0 160px;
+	padding: 140px 0 110px;
 	background: #222;
 	text-align: center;
 	overflow: hidden;
@@ -1085,14 +1165,16 @@ p.p2 {
 		font-weight: 800;
 	}
 	.inner {
-		max-width: 1640px;
+		max-width: 1200px;
 	}
 	h2 {
+		font-size: 48px;
 		margin-bottom: 32px;
 		color: #fff;
 	}
 	h5 {
 		color: #fff;
+		font-weight: 500;
 	}
 	.btnWrap {
 		display: flex;
@@ -1103,8 +1185,8 @@ p.p2 {
 	.imgWrap {
 		position: relative;
 		aspect-ratio: 1608 / 1105;
-		margin-top: 80px;
-		margin-bottom: 120px;
+		margin-top: 55px;
+		margin-bottom: 60px;
 		overflow: visible;
 		img {
 			position: absolute;
@@ -1128,7 +1210,8 @@ p.p2 {
 .section-07 {
 	overflow: hidden;
 	.inner {
-		max-width: 1352px;
+		// max-width: 1352px;
+		max-width: 1100px;
 		position: relative;
 	}
 	.whiteDim {
@@ -1145,7 +1228,8 @@ p.p2 {
 		top: 0;
 		right: 16px;
 		animation: verticalSlide 30000ms linear infinite;
-		max-width: 600px;
+		// max-width: 600px;
+		max-width: 480px;
 		width: 45%;
 	}
 	@keyframes verticalSlide {
@@ -1157,8 +1241,8 @@ p.p2 {
 		}
 	}
 	.left {
-		padding: 160px 0 178px;
-		padding-left: 100px;
+		padding: 128px 0 155px;
+		padding-left: 39px;
 	}	
 }
 
@@ -1170,7 +1254,7 @@ p.p2 {
 		background-clip: text;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
-		margin-bottom: 24px;
+		margin-bottom: 18px;
 		// text-align: left;
 	}
 	h2 {
@@ -1187,8 +1271,9 @@ p.p2 {
 		}
 	}
 	h3 {
+		font-size: 44px;
 		font-weight: 500;
-		margin-bottom: 40px;
+		margin-bottom: 32px;
 		// text-align: left;
 		b {
 			font-weight: 800;
@@ -1196,7 +1281,7 @@ p.p2 {
 	}
 	h5 {
 		font-weight: 500;
-		margin-bottom: 72px;
+		margin-bottom: 60px;
 		// text-align: left;
 		b {
 			font-weight: 700;
@@ -1206,18 +1291,20 @@ p.p2 {
 
 .section-08 {
 	background-color: #EEE;
-	padding: 170px 0;
+	padding: 113px 0;
 	.inner {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		max-width: 1152px;
+		max-width: 1024px;
+		// padding-right: 80px;
 	}
 	.slickSec08 {
 		width: 100%;
-		max-width: 540px;
+		max-width: 432px;
 		aspect-ratio: 540 / 600;
 		padding-bottom: 56px;
+		margin-bottom: 0;
 		.slick-list {
 			border-radius: 24px;
 			box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.16);
@@ -1234,7 +1321,7 @@ p.p2 {
 			bottom: 0;
 		}
 		.slick-dots li {
-			margin: 0 12px;
+			margin: 0 9.5px;
 			button {
 				display: flex;
 				align-items: center;
@@ -1243,8 +1330,8 @@ p.p2 {
 			}
 			button:before {
 				position: static;
-				width: 16px;
-				height: 16px;
+				width: 13px;
+				height: 13px;
 				border-radius: 99px;
 				background: #111;
 			}
@@ -1256,13 +1343,15 @@ p.p2 {
 }
 
 .section-09 {
-	padding: 240px 0 200px;
+	padding: 160px 0 123px;
 	background-color: #000;
 	text-align: center;
 	.inner {
 		overflow: hidden;
+		max-width: 100%;
 	}
 	h2 {
+		font-size: 48px;
 		color: #fff;
 		.color {
 			font-weight: 800;
@@ -1273,9 +1362,11 @@ p.p2 {
 		color: #FFF;
 		text-align: center;
 		font-family: "SUIT Variable";
-		font-size: 32px;
+		// font-size: 32px;
+		font-size: 24px;
 		font-style: normal;
-		font-weight: 700;
+		// font-weight: 700;
+		font-weight: 500;
 		line-height: 150%; /* 48px */
 		letter-spacing: -0.96px;
 		margin-bottom: 40px;
@@ -1299,7 +1390,8 @@ p.p2 {
 		}
 		.book {
 			animation: booktrack 80s linear infinite;
-			max-height: 500px;
+			// max-height: 500px;
+			max-height: 340px;
 		}
 		.track {
 			display: flex;
@@ -1313,52 +1405,59 @@ p.p2 {
 		-webkit-text-fill-color: transparent;
 	}
 	.tableImg {
-		margin-bottom: 80px;
+		margin-bottom: 40px;
 		width: 100%;
+		max-width: 1123px;
 	}
 	.btnWrap {
 		display: flex;
 		justify-content: center;
 		margin: 0 auto;
-		margin-top: 80px;
-		gap: 40px;
+		margin-top: 60px;
+		gap: 32px;
 	}
 }
 
 .section-10 {
 	padding-block: 160px;
 	text-align: center;
+	.inner {
+		padding: 0 20px;
+	}
 	img {
 		max-width: 100%;
 	}
 	.p1 {
-		font-size: 32px;
+		font-size: 24px;
+		margin-bottom: 28px;
+	}
+	h2 {
+		font-size: 50px;
+		margin-bottom: 24px;
 	}
 	h5 {
-		margin-bottom: 120px;
-	}
-	.btnWrap {
-		margin-top: 120px;
+		margin-bottom: 60px;
 	}
 }
 
 
 .section-11 {
 	text-align: center;
-	padding-block: 160px 133px;
+	padding-block: 128px 132px;
 	background-color: #111111;
 	.inner {
-		max-width: 900px;
+		max-width: 720px;
 	}
 	h1 {
 		color: #fff;
+		line-height: 1.44;
 	}
 	.reviewWrap {
 		position: relative;
 		width: 100%;
 		aspect-ratio: 900 / 1086;
 		overflow: hidden;
-		margin-top: 80px;
+		margin-top: 67px;
 		.reviewDim {
 			position: absolute;
 			z-index: 1;
@@ -1374,6 +1473,9 @@ p.p2 {
 			animation: verticalSlide 10000ms linear infinite;
 		}
 	}
+	.btnWrap {
+		margin-top: 70px;
+	}
 }
 
 .partnerLine {
@@ -1382,9 +1484,9 @@ p.p2 {
 	align-items: center;
 	width: 100%;
 	overflow: hidden;
-	padding: 40px 0;
+	padding: 20px 0;
 	img {
-		height: 88px;
+		height: 72px;
 	}
 }
 
@@ -1431,15 +1533,16 @@ footer {
 	display: flex !important;
 	align-items: center;
 	justify-content: center;
-	height: 800px;
+	height: 640px;
 	// padding: 150px 0;	
 	// background: url(../img/bg_page2.jpg) center/cover no-repeat;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	.inner {
-		// max-width: 1152px;
-		padding-left: 80px;
+		max-width: 1076px;
+		// padding-left: 80px;
+		padding-inline: 20px;
 	}
 	h3 {
 		color: #fff;
@@ -1467,7 +1570,7 @@ footer {
 	}
 	h5 {
 		color: #fff;
-		margin-bottom: 80px;
+		margin-bottom: 50px;
 		font-weight: 500;
 		line-height: 144%;
 		letter-spacing: -0.72px;
