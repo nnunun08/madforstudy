@@ -1493,6 +1493,11 @@ p.p2 {
 footer {
 	padding: 43px 0 30px;
 	background-color: #373B42;
+	.inner {
+		// max-width: 1286 + 84px;
+		max-width: 1280px;
+		padding-inline: 16px;
+	}
 	img {
 		height: 34px;
 	}
@@ -1540,7 +1545,7 @@ footer {
 	background-size: cover;
 	background-repeat: no-repeat;
 	.inner {
-		max-width: 1076px;
+		max-width: 1080px;
 		// padding-left: 80px;
 		padding-inline: 20px;
 	}
@@ -1591,35 +1596,44 @@ footer {
 	@media screen and (min-width:1023px) {
 		&.section-12-smalFont {
 			h1 {
-				font-size: 56px;
-				margin-top: 16px;
-				margin-bottom: 35px;
+				// font-size: 56px;
+				// margin-top: 16px;
+				// margin-bottom: 35px;
 			}
 			h5 {
-				font-size: 24px;
-				margin-bottom: 96px;
+				// font-size: 24px;
+				// margin-bottom: 96px;
+				font-size: 20px;
+				margin-bottom: 60px;
 			}
 		}
 	}
 	.inner {
-		max-width: 952px;
+		// max-width: 952px;
+		max-width: 924 + 84px;
+	}
+	&.lvTestImgSection .inner {
+		max-width: 960 + 84px;
 	}
 	h1 {
 		@include textGra();
-		// margin-bottom: 20px;
-		margin-bottom: 40px;
+		margin-bottom: 20px;
+		// margin-bottom: 40px;
 	}
 	.black {
 		color: #111;
 		background: transparent;
 		margin: 0;
 		-webkit-text-fill-color: unset;
+		font-weight: 700;
 	}
 	.btnWrap {
-		margin-top: 120px;
+		// margin-top: 120px;
+		margin-top: 80px;
 	}
 	h5 {
-		margin-bottom: 60px;
+		// margin-bottom: 60px;
+		margin-bottom: 50px;
 		font-weight: 400;
 		.highlight {
 			color: #fff;
@@ -1638,19 +1652,23 @@ footer {
 	}
 	.maxImg {
 		width: 100%;
-		margin-block: 64px;
+		// margin-block: 64px;
+		margin-block: 40px 60px;
 		img {
 			width: 100%
 		}
 	}
 	.trackWrap {
 		@include innerFull();
-		margin-block: 80px 120px;
+		// margin-block: 80px 120px;
+		margin-block: 50px 90px;
 		.track {
 			display: flex;
 			.item {
 				animation: imgSlide 80s linear infinite;
-				height: 430px;
+				// page10.html
+				// height: 430px;
+				height: 280px;
 			}
 			@keyframes imgSlide {
 				from {
@@ -1678,8 +1696,10 @@ footer {
 		}
 	}
 	.lvStep {
-		max-width: 1087px;
-		margin-block: 40px 64px;
+		// max-width: 1087px;
+		max-width: 870px;
+		// margin-block: 40px 64px;
+		margin-block: 20px 40px;
 		img {
 			width: 100%;
 		}
@@ -1710,7 +1730,8 @@ footer {
 		margin: 0 auto;
 		display: flex;
 		gap: 36px;
-		margin-bottom: 80px;
+		// margin-bottom: 80px;
+		margin-bottom: 50px;
 		.imgBx {
 			position: relative;
 			aspect-ratio: 560 / 880;
@@ -1773,12 +1794,15 @@ footer {
 		}
 	}
 	.bgImgCard {
-		max-width: 1032px;
+		// max-width: 1032px;
+		max-width: 720px;
 		display: flex;
 		flex-wrap: wrap;
-		gap: 40px;
+		// gap: 40px;
+		gap: 24px;
 		margin: 0 auto;
-		margin-bottom: 80px;
+		// margin-bottom: 80px;
+		margin-bottom: 40px;
 		.item {
 			text-align: left;
 			box-sizing: border-box;
@@ -1787,14 +1811,18 @@ footer {
 			display: flex;
 			align-items: flex-end;
 			flex: 1 0 auto;
-			padding: 47px;
+			// padding: 47px;
+			padding: 34px;
 			width: 40%;
-			height: 400px;
+			// height: 400px;
+			height: 288px;
 			color: #FFF;
 			font-family: "SUIT Variable";
-			font-size: 40px;
+			// font-size: 40px;
+			font-size: 24px;
 			font-style: normal;
-			font-weight: 400;
+			// font-weight: 400;
+			font-weight: 700;
 			line-height: 144%; /* 57.6px */
 			letter-spacing: -1.2px;
 			&.full {
@@ -1890,7 +1918,8 @@ footer {
 	}
 	.globalImg {
 		width: 100%;
-		margin: 66px 0 80px;
+		// margin: 66px 0 80px;
+		margin: 30px 0 50px;
 	}
 	.imgTextWrap {	
 		.item {
@@ -1900,7 +1929,8 @@ footer {
 			gap: calc((75 / 1120) * 100%);
 			margin-bottom: 72px;
 			&.reverse {
-				margin-bottom: 128px;
+				// margin-bottom: 128px;
+				margin-bottom: 80px;
 				flex-direction: row-reverse;
 			}
 			& + .item {
@@ -1908,7 +1938,8 @@ footer {
 			}
 			img {
 				aspect-ratio: 480 / 640;
-				max-width: 480px;
+				// max-width: 480px;
+				max-width: 350px;
 				width: calc((480 / 1120) * 100%);
 				border-radius: 16px;
 				flex: 1 0 0;
@@ -1917,7 +1948,8 @@ footer {
 				flex: 1 0 auto;
 				li {
 					text-align: left;
-					padding: 40px 0;
+					// padding: 40px 0;
+					padding: 28px 0;
 					border-top: 1px solid #EEE;
 					&:last-child {
 						border-bottom: 1px solid #EEE;
@@ -1926,7 +1958,8 @@ footer {
 				.tit {
 					color: #111;
 					font-family: "SUIT Variable";
-					font-size: 32px;
+					// font-size: 32px;
+					font-size: 28px;
 					font-style: normal;
 					font-weight: 800;
 					line-height: 144%; /* 46.08px */
@@ -1936,10 +1969,11 @@ footer {
 				.sub {
 					color: #111;
 					font-family: "SUIT Variable";
-					font-size: 24px;
+					// font-size: 24px;
+					font-size: 18px;
 					font-style: normal;
 					font-weight: 500;
-					line-height: 144%; /* 34.56px */
+					line-height: 160%;
 					letter-spacing: -0.72px;
 				}
 			}
@@ -2351,20 +2385,34 @@ footer {
 }
 
 .section-16 {
-	padding: 120px 0 150px;
-	background: linear-gradient(109deg, #262626 17.95%, #484848 50.11%, #000 84.19%);
+	// padding: 120px 0 150px;
+	padding: 130px 0 140px;
+	// background: linear-gradient(109deg, #262626 17.95%, #484848 50.11%, #000 84.19%);
+	background: #333;
 	text-align: center;
 	overflow: hidden;
+	&.blackBG {
+		background: #111;
+		padding: 160px 0;
+	}
 	.inner {
 		max-width: 100%;
 	}
 	h1 {
 		color: #fff;
 		font-weight: 700;
-		margin-bottom: 80px
+		// margin-bottom: 80px
+		margin-bottom: 60px
+	}
+	.btnWrap {
+		// margin-top: 80px;
+		margin-top: 50px;
 	}
 	.mb-8 {
 		margin-bottom: 8px;
+	}
+	.mb-20 {
+		margin-bottom: 20px;
 	}
 	.mb-24 {
 		margin-bottom: 24px;
@@ -2384,7 +2432,8 @@ footer {
 	h5 {
 		color: #FFF;
 		font-family: "SUIT Variable";
-		font-size: 32px;
+		// font-size: 32px;
+		font-size: 24px;
 		font-style: normal;
 		font-weight: 300;
 		line-height: 144%;
@@ -2397,8 +2446,10 @@ footer {
 		}
 	}
 	.customContents {
-		max-width: 1172px;
-		margin: 80px auto 96px;
+		// max-width: 1172px;
+		max-width: 915px;
+		// margin: 80px auto 96px;
+		margin: 40px auto 10px;
 		.item {
 			padding: 0 16px;
 			box-sizing: border-box;
@@ -2410,6 +2461,7 @@ footer {
 	.realStart {
 		max-width: 1080px;
 		margin: 0 auto;
+		margin-top: 35px;
 		img {
 			width: 100%
 		}
@@ -2418,7 +2470,8 @@ footer {
 		@include innerFull();
 	}
 	.trackWrap2 {
-		margin: 120px 0;
+		// margin: 120px 0;
+		margin: 60px 0 80px;
 		.track {
 			.item {
 				height: 280px;
@@ -2431,7 +2484,8 @@ footer {
 		.item {
 			animation: imgSlide 80s linear infinite;
 			// height: 420px;
-			height: 350px;
+			// height: 350px;
+			height: 280px;
 		}
 		@keyframes imgSlide {
 			from {
@@ -2449,9 +2503,11 @@ footer {
 		gap: 32px;
 		width: 100%;
 		// max-width: 1080px;
-		max-width: 880px;
+		// max-width: 880px;
+		max-width: 792px;
 		margin: 0 auto;
-		margin-top: 80px;
+		// margin-top: 80px;
+		margin-top: 40px;
 		img {
 			width: 100%;
 		}
@@ -3123,10 +3179,12 @@ footer {
 .section-17 {
 	background-color: #F9F9F9;
 	@media screen and (min-width:1023px) {
-		padding: 160px 0;
+		// padding: 160px 0;
+		padding: 130px 0;
 	}
 	.inner {
-		max-width: 1192px;
+		// max-width: 1192px;
+		max-width: 1032 + 84px;
 	}
 	.conWrap {
 		padding-left: 53.4%;
@@ -3135,8 +3193,9 @@ footer {
 			position: absolute;
 			top: 0;
 			left: 0;
-			width: 44%;
-			margin-bottom: 32px;
+			// width: 44%;
+			width: 46.6%;
+			// margin-bottom: 32px;
 			// max-width: 520px;
 		}
 		h3 {
@@ -3190,7 +3249,12 @@ footer {
 }
 
 .section-18 {
-	padding: 160px 0;
+	// padding: 160px 0;
+	padding: 120px 0;
+	.curriTable {
+		max-width: 816px;
+		margin-inline: auto;
+	}
 	img {
 		width: 100%;
 		margin-bottom: 40px;
@@ -3221,15 +3285,19 @@ footer {
 }
 
 .section-19 {
-	padding: 180px 0 230px;
+	// padding: 180px 0 230px;
+	padding: 160px 0 180px;
 	background-color: #F9F9F9;
 	.inner {
-		max-width: 1082px;
+		// max-width: 1082px;
+		max-width: 904 + 84px;
 	}
 	.item + .item {
 		border-top: 2px solid #EEE;
-		padding-top: 80px;
-		margin-top: 80px;
+		// padding-top: 80px;
+		// margin-top: 80px;
+		padding-top: 40px;
+		margin-top: 40px;
 	}
 	.item {
 		display: flex;
@@ -3244,7 +3312,8 @@ footer {
 			font-family: "SUIT Variable";
 			font-size: 16px;
 			font-style: normal;
-			font-weight: 700;
+			// font-weight: 700;
+			font-weight: 500;
 			line-height: 144%; /* 23.04px */
 			letter-spacing: -0.48px;
 			margin-bottom: 32px;
@@ -3252,31 +3321,37 @@ footer {
 		h3 {
 			color: #000;
 			font-family: "SUIT Variable";
-			font-size: 56px;
+			// font-size: 56px;
+			font-size: 40px;
 			font-style: normal;
 			font-weight: 800;
 			line-height: 144%; /* 80.64px */
 			letter-spacing: -1.68px;
-			margin-bottom: 8px;
+			// margin-bottom: 8px;
+			margin-bottom: 16px;
 		}
 		.p1 {
 			color: #000;
 			font-family: "SUIT Variable";
-			font-size: 24px;
+			// font-size: 24px;
+			font-size: 20px;
 			font-style: normal;
 			font-weight: 500;
 			line-height: 144%; /* 34.56px */
 			letter-spacing: -0.72px;
 		}
 		img {
-			border-radius: 24px;
-			max-width: 480px;
+			// border-radius: 24px;
+			// max-width: 480px;
+			border-radius: 16px;
+			max-width: 400px;
 			width: 100%;
 			aspect-ratio: 480 / 320;
 		}
 	}
 	.item:last-child {
-		margin-bottom: 160px;
+		// margin-bottom: 160px;
+		margin-bottom: 100px;
 	}
 }
 @media screen and (max-width:1024px) {
@@ -3323,7 +3398,8 @@ footer {
 	padding: 80px 0;
 	background: url(../img/bg_section_20.jpg) center/cover no-repeat;
 	.inner {
-		max-width: 992px;
+		// max-width: 992px;
+		max-width: 960 + 84px;
 		img {
 			width: 100%;
 		}
@@ -3332,24 +3408,29 @@ footer {
 
 .section-21 {
 	background: #111;
-	padding: 160px 0 173px;
 	text-align: center;
+	// padding: 160px 0 173px;
+	padding: 160px 0 146px;
 	.inner {
-		max-width: 1232px;
+		// max-width: 1232px;
+		max-width: 900 + 84px;
 	}
 	h3 {
-		margin-bottom: 40px;
+		// margin-bottom: 40px;
+		margin-bottom: 20px;
 	}
 	p {
 		color: #FFF;
 		text-align: center;
 		font-family: "SUIT Variable";
-		font-size: 40px;
+		// font-size: 40px;
+		font-size: 24px;
 		font-style: normal;
 		font-weight: 500;
 		line-height: 144%; /* 57.6px */
 		letter-spacing: -1.2px;
-		margin-bottom: 80px;
+		// margin-bottom: 80px;
+		margin-bottom: 60px;
 	}
 	img {
 		object-fit: cover;
@@ -3415,19 +3496,23 @@ footer {
 }
 
 .section-22 {
-	padding: 160px 0 173px;
+	// padding: 160px 0 173px;
+	padding: 160px 0 120px;
 	text-align: center;
 	.inner {
-		max-width: 1232px;
+		// max-width: 1232px;
+		max-width: 984px;
 	}
 	h3 {
-		margin-bottom: 40px;
+		// margin-bottom: 40px;
+		margin-bottom: 20px;
 	}
 	p {
 		color: #111;
 		text-align: center;
 		font-family: "SUIT Variable";
-		font-size: 40px;
+		// font-size: 40px;
+		font-size: 24px;
 		font-style: normal;
 		font-weight: 500;
 		line-height: 144%; /* 57.6px */
@@ -3436,7 +3521,8 @@ footer {
 	}
 	img {
 		width: 100%;
-		margin: 80px 0 120px;
+		// margin: 80px 0 120px;
+		margin: 60px 0;
 	}
 }
 @media screen and (max-width:1024px) {
@@ -3457,22 +3543,30 @@ footer {
 }
 
 .section-23 {
-	padding: 160px 0 173px;
+	// padding: 160px 0 173px;
+	padding: 140px 0 100px;
 	text-align: center;
 	.inner {
 		max-width: 1232px;
 	}
 	h5 {
-		margin-bottom: 32px;
+		// margin-bottom: 32px;
+		margin-bottom: 20px;
 	}
 	h3 {
-		margin-bottom: 40px;
+		// margin-bottom: 40px;
+		margin-bottom: 20px;
+		font-weight: 700;
+		b {
+			font-weight: 800;
+		}
 	}
 	p {
 		color: #111;
 		text-align: center;
 		font-family: "SUIT Variable";
-		font-size: 40px;
+		// font-size: 40px;
+		font-size: 24px;
 		font-style: normal;
 		font-weight: 500;
 		line-height: 144%; /* 57.6px */
@@ -3481,7 +3575,9 @@ footer {
 	}
 	img {
 		width: 100%;
-		margin: 80px 0 120px;
+		// margin: 80px 0 120px;
+		margin: 40px auto 80px;
+		max-width: 960px;
 	}
 	.cloudLayerWrap {
 		position: relative;
@@ -3847,9 +3943,12 @@ footer {
 .madforJunior {
 	text-align: center;
 	.madforJunior-hero {
-		padding: 140px 0 130px;
-		background: #FBFBFB url(../img/bg_madforJunior_hero.png) center/113% no-repeat;
-		min-height: 1350px;
+		// padding: 140px 0 130px;
+		padding: 120px 0;
+		// background: #FBFBFB url(../img/bg_madforJunior_hero.png) center/113% no-repeat;
+		background: #FBFBFB url(../img/bg_madforJunior_hero.png) center/contain no-repeat;
+		// min-height: 1350px;
+		min-height: 1050px;
 		box-sizing: border-box;
 		.titImg {
 			max-width: 826px;
@@ -3858,8 +3957,10 @@ footer {
 		}
 		.graphWrap {
 			position: relative;
-			margin: 88px auto 72px;
-			max-width: 760px;
+			// margin: 88px auto 72px;
+			// max-width: 760px;
+			margin: 60px auto 40px;
+			max-width: 594px;
 			aspect-ratio: 760 / 380;
 			[class*="bar"] {
 				border-radius: 16px 16px 0 0;
@@ -3903,10 +4004,12 @@ footer {
 			color: #555;
 			text-align: center;
 			font-family: "SUITE Variable";
-			font-size: 28px;
+			// font-size: 28px;
+			font-size: 24px;
 			font-style: normal;
 			font-weight: 700;
 			line-height: 160%; /* 44.8px */
+			margin-bottom: -20px;
 		}
 	}
 	@media screen and (max-width:1024px) {
@@ -3949,8 +4052,12 @@ footer {
 		}
 	}
 	.band {
-		padding: 34px 0;
+		// padding: 34px 0;
+		padding: 28px 0;
 		position: relative;
+		.inner {
+			max-width: 713 + 84px;
+		}
 		img {
 			max-width: 100%;
 		}
@@ -3958,7 +4065,7 @@ footer {
 			position: absolute;
 			top: 99%;
 			left: 50%;
-			transform: translateX(-50%) scale(3, 2);
+			transform: translateX(-50%) scale(6, 4);
 		}
 	}
 	@media screen and (max-width:1024px) {
@@ -3975,8 +4082,12 @@ footer {
 
 	}
 	.bandContents {
-		padding: 110px 0;
+		// padding: 110px 0;
+		padding: 80px 0;
 		overflow: hidden;
+		.inner {
+			max-width: 980 + 84px;
+		}
 		img {
 			width: 100%;
 			max-width: 1200px;
@@ -3995,7 +4106,8 @@ footer {
 	}
 
 	.madforJunior-cta {
-		padding: 160px 0 142px;
+		// padding: 160px 0 142px;
+		padding: 150px 0 126px;
 		overflow: hidden;
 		background: #f9f9f9 url(../img/bg_madforJunior_cta.png) top -10% center / 110% no-repeat;
 		.titImg {
@@ -4004,7 +4116,8 @@ footer {
 		.section-12 {
 			padding: 0;
 			.trackWrap {
-				margin-block: 40px 120px;
+				// margin-block: 40px 120px;
+				margin-block: 40px 60px;
 			}
 		}
 		.btnWrap {
@@ -4029,27 +4142,33 @@ footer {
 
 .section-25 {
 	text-align: center;
-	padding: 200px 0 40px;
+	// padding: 200px 0 40px;
+	padding: 140px 0 0;
 	.inner {
-		max-width: 1232px;
+		// max-width: 1232px;
+		max-width: 724 + 84px;
 	}
 	h1 {
-		margin-bottom: 32px;
+		// margin-bottom: 32px;
+		margin-bottom: 20px;
 	}
 	h5 {
-		margin-bottom: 64px;
+		// margin-bottom: 64px;
+		margin-bottom: 40px;
 	}
 	.p1 {
 		display: inline-block;
 		color: #555;
 		text-align: center;
 		font-family: "SUIT Variable";
-		font-size: 24px;
+		// font-size: 24px;
+		font-size: 16px;
 		font-style: normal;
 		font-weight: 400;
 		line-height: 144%; /* 34.56px */
 		background: #F3F7FB;
-		padding: 6px 24px;
+		// padding: 6px 24px;
+		padding: 5px 16px;
 		margin-bottom: 40px;
 	}
 	input[type="radio"] {
@@ -4060,21 +4179,24 @@ footer {
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: center;
-		gap: 32px 24px;
+		// gap: 32px 24px;
+		gap: 24px 20px;
 	}
 	.tab-list label {
 		white-space: nowrap;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		padding: 24px 56px;
+		// padding: 24px 56px;
+		padding: 12px 34px;
 		border-radius: 90px;
 		border: 1px solid #555;
 		box-sizing: border-box;
 		color: #555;
 		text-align: center;
 		font-family: "SUIT Variable";
-		font-size: 32px;
+		// font-size: 32px;
+		font-size: 18px;
 		font-style: normal;
 		font-weight: 500;
 		line-height: 132%; /* 42.24px */
@@ -4095,7 +4217,8 @@ footer {
 		color: #FFF;
 		text-align: center;
 		font-family: "SUIT Variable";
-		font-size: 32px;
+		// font-size: 32px;
+		// font-size: 18px;
 		font-style: normal;
 		font-weight: 700;
 		line-height: 132%; /* 42.24px */
@@ -4103,30 +4226,40 @@ footer {
 	}
 	.tab-panel { 
 		display:none; 
-		margin-top: 64px;
+		// margin-top: 64px;
+		margin-top: 40px;
 		// height: 1350px;
 		height: auto;
-		border-radius: 40px;
+		// border-radius: 40px;
+		border-radius: 16px;
 		background: #F9F9F9;
-		padding: 80px 100px;
-		gap: 32px;
+		// padding: 80px 100px;
+		padding: 48px 70px;
+		// gap: 32px;
+		gap: 20px;
 		flex-direction: column;
 		.item {
-			border-radius: 8px;
+			// border-radius: 8px;
+			border-radius: 4px;
 			border: 1px solid #555;
 			background: #FFF;
-			padding: 26px 0 26px 40px;
+			// padding: 26px 0 26px 40px;
+			padding: 12px 22px;
 			box-sizing: border-box;
 			display: flex;
 			align-items: center;
-			gap: 32px;
+			// gap: 32px;
+			gap: 24px;
 		}
 		[class*="lv"] {
-			padding: 8px 24px;
-			border-radius: 4px;
+			// padding: 8px 24px;
+			padding: 7px 13px;
+			// border-radius: 4px;
+			border-radius: 2px;
 			color: #FFF;
 			font-family: "SUIT Variable";
-			font-size: 40px;
+			// font-size: 40px;
+			font-size: 20px;
 			font-style: normal;
 			font-weight: 500;
 			line-height: 132%; /* 52.8px */
@@ -4139,7 +4272,8 @@ footer {
 		.name {
 			color: #000;
 			font-family: "SUIT Variable";
-			font-size: 48px;
+			// font-size: 48px;
+			font-size: 24px;
 			font-style: normal;
 			font-weight: 500;
 			line-height: 132%; /* 63.36px */
